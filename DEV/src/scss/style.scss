@@ -1,0 +1,14 @@
+@import url(./reset.scss);
+
+input[type=file] {
+  display: none;
+}
+
+.lil-gui {
+  --width: 350px;
+  .children {
+    .children {
+        margin-left: 1rem;
+    }
+  }
+}

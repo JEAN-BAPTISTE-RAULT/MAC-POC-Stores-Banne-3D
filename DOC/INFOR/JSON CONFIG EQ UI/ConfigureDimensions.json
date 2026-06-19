@@ -1,0 +1,4707 @@
+{
+  "requete_envoyee": {
+    "method": "POST",
+    "url": "https://mingle-ionapi.eu1.inforcloudsuite.com/T4TVNDJFLAAWUGL4_TRN/CPQ/api/v4/ProductConfiguratorUI/Configure",
+    "headers": {
+      "Authorization": "Bearer eyJraWQiOiJrZzo2N2U1ZDM0ZS02MTkzLTQwYjEtYTJkZS1kNzNlYjhlY2VkYTkiLCJhbGciOiJSUzI1NiJ9.eyJTZXJ2aWNlQWNjb3VudCI6IlQ0VFZOREpGTEFBV1VHTDRfVFJOI0REWVNoS3Bra2R2cGJ2UEZmVU9uYjEyWEh2Y0MzNXpNa3dmX1g3dGYzeVdJVVpneHJGLUQ4R184cDVaaWI3bzc5d29hRWtCanY0NUxSNE5CMlZzZ213IiwiVGVuYW50IjoiVDRUVk5ESkZMQUFXVUdMNF9UUk4iLCJJZGVudGl0eTIiOiJhOGQ0MGU4NC01NTc1LTRiNDYtOTU0Mi1jNDBiY2JmNDYxYzIiLCJFbmZvcmNlU2NvcGVzRm9yQ2xpZW50IjoiMCIsImdyYW50X2lkIjoiOGUxYzU1YjYtNThhOC00OGI2LWE1ZmItOWM2ZDIwNTZkNGVmIiwiSW5mb3JTVFNJc3N1ZWRUeXBlIjoiQVMiLCJjbGllbnRfaWQiOiJUNFRWTkRKRkxBQVdVR0w0X1RSTn5NazJlQ1MxTm9lZF9SdjNGVFJTMFU5YmN2LVRDaFg4Rkt0LTh0SS1rc0FnIiwianRpIjoiYzc5MWE2MzEtMTEyOS00YTQzLThmZmItMjdmM2ViOTE2NDJjIiwiaWF0IjoxNzYwNTE2NjIyLCJuYmYiOjE3NjA1MTY2MjIsImV4cCI6MTc2MDUyMzgyMiwiaXNzIjoiaHR0cHM6Ly9taW5nbGUtc3NvLmV1MS5pbmZvcmNsb3Vkc3VpdGUuY29tOjQ0MyIsImF1ZCI6Imh0dHBzOi8vbWluZ2xlLWlvbmFwaS5ldTEuaW5mb3JjbG91ZHN1aXRlLmNvbSJ9.j1dgpGM4BauGvM9QbGNNZ_Muy1-ca3FC977ntpJcMrQWV8RiJu-Fnzjp436SbOoiMGU8SOUrFOFOFLNoEjw-YmiiPeeksqa2xo9PX6c9UKfcakbJZrTmrC8oL8Wap6ce-suOEquo9ctbY1WUs27QStNnfd5yLo6VT4YRT1crkBPzrCFROSfij3LNkI6zHvSA3nkED_c4J6Q0Q4YYX6R0eYAsMYT2yiaPw7v7DIwqxU2H9YS8zT8_r3-YQdUX7rUe1796mPDrNqtIzhKiRNF5Fs54AL-Pz6Fjla2W-YyDStFErUZikD4IxcSovMrzU83QeCCXQKUL-WUC0UVTh06ROg",
+      "Content-Type": "application/json-patch+json"
+    },
+    "body": {
+      "sessionID": "T4TVNDJFLAAWUGL4_TRN~Default~f86e0451-0e56-4bfc-9a50-ad4652298517",
+      "selections": [
+        {
+          "id": "6d512ac5-cd45-472d-b700-c214d634616e",
+          "value": "2000"
+        }
+      ]
+    }
+  },
+  "statut_reponse": 200,
+  "reponse_recue_brute": {
+    "Pages": [
+      {
+        "Caption": "[b]Produit[/b]",
+        "IsVisible": true,
+        "Screens": [
+          {
+            "IsVisible": true,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": true,
+            "Description": "Pause section Informations Globales",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "5313c37e-78c9-484b-8788-f39dd9d1eff8",
+                "Name": "v_bool_pauseSectionInfosGlobales",
+                "Caption": "[size=1.2em][color=#404040]Déclencher une pause en fin de section afin de paramétrer les options souhaitées[/color][/size]",
+                "Type": 2,
+                "MaxColumnSpan": 99,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "RadioButtonHorizontal",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": true,
+            "Description": "Pause attribut de composant",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "1d23c51b-bc54-4f16-97d1-b5dea633ab71",
+                "Name": "s_glb_pause_attribut_composant",
+                "Caption": "[size=1.2em][color=#404040]Déclencher une pause au niveau d'un attribut de composant (à la fin du traitement choisi)[/color][/size]",
+                "Type": 2,
+                "MaxColumnSpan": 99,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "RadioButtonHorizontal",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": true,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": true,
+            "Caption": "Mode Debug du scénario commercial",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "47b42018-f432-4921-aca3-8034eda0368f",
+                "Name": "s_glb_mode_debug",
+                "Caption": "[color=#404040]Activer le mode Debug[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 99,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": true,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": true,
+            "Caption": "Simuler la saisie",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "75ff3959-a343-4c5f-bdef-2f51eb3e134e",
+                "Name": "v_bool_isDebugWebServiceInfoClient",
+                "Caption": "[color=#404040]Debug du web service de récupération des informations de la fiche client[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 99,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "2883fcf8-7133-4548-8f23-3820b2661b27",
+                "Name": "c_glb_base",
+                "Caption": "[size=1.2em][color=#404040]Simuler l'environnement (Tenant)[/color][/size]",
+                "Type": 0,
+                "MaxColumnSpan": 1,
+                "Value": "TRN",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "RadioButtonHorizontal",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "TST",
+                    "Caption": "TST",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "TRN",
+                    "Caption": "TRN",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "AX2",
+                    "Caption": "AX2",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "PRD",
+                    "Caption": "PRD",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "4224d390-08bb-4d48-b2a6-f7352af86020",
+                "Name": "c_glb_code_client",
+                "Caption": "[size=1.2em][color=#404040]Simuler un client (indiquer un code client, ex : C00000001)[/color][/size]",
+                "Type": 0,
+                "MaxColumnSpan": 1,
+                "Value": "C00000001",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "TextBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "b955da73-1a0c-432d-9ae5-44e42d0592f0",
+                "Name": "c_glb_date_application",
+                "Caption": "[size=1.2em][color=#404040]Simuler la date d'application[/color][/size]",
+                "Type": 3,
+                "MaxColumnSpan": 1,
+                "Value": "2025-10-15T08:23:03.0584355Z",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "DateTimePicker",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "4c722a1a-9f5f-4e83-94d3-73144ce1dca0",
+                "Name": "c_glb_type_devis_commande",
+                "Caption": "[size=1.2em][color=#404040]Simuler le type de devis/commande[/color][/size]",
+                "Type": 0,
+                "MaxColumnSpan": 1,
+                "Value": "Diffuse",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "DropDown",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "Diffuse",
+                    "Caption": "Diffus",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "Worksite",
+                    "Caption": "Chantier",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "6197df20-6976-47d7-b94e-77b8e77fb7d1",
+                "Name": "c_glb_emballage_chantier",
+                "Caption": "[color=#404040]Simuler le choix d'[b]emballage chantier[/b][/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": true,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": true,
+            "Caption": "Simuler le type de configuration",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "ed53ead1-a08a-4f36-81c8-bd7c1cdbc0ef",
+                "Name": "c_glb_config_commerciale",
+                "Caption": "[color=#404040]Configuration commerciale[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "True",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "50f8c479-bded-4238-8844-24cf62296d86",
+                "Name": "c_glb_config_technique",
+                "Caption": "[color=#404040]Configuration technique[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "82d56f12-6935-4e82-b80a-7748989adce6",
+                "Name": "c_glb_config_job_background",
+                "Caption": "[color=#404040][color=dimgray][i]Configuration par un job en background[/i][/color][/color]",
+                "Type": 2,
+                "MaxColumnSpan": 99,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": true,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": true,
+            "Caption": "Récupération d'une configuration existante",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "6d9a6230-39d0-46e7-af64-ae35b69f9fea",
+                "Name": "s_glb_numero_variante_config",
+                "Caption": "[size=1.2em][color=#404040]Indiquer le n° de variante de la configuration à charger[/color][/size]",
+                "Type": 0,
+                "MaxColumnSpan": 1,
+                "Value": "",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "TextBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "8ef5a270-9901-4ca2-8a14-148dfc0b233d",
+                "Name": "v_bool_isDebugInfosConfiguration",
+                "Caption": "[color=#404040]Debug du web service de récupération des informations de configuration[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": true,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": true,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": true,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": true,
+            "Caption": "Comparaison de configuration",
+            "ShowDescription": true,
+            "Description": "[size=0.9em][color=DimGray]Déclenche les mécanismes de comparaison de configuration (chargement variante / comparaison variante / enregistrement variante)[/color][/size]",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "60289e00-20a4-4798-a3ac-41c0bede4757",
+                "Name": "s_glb_comparaison_configuration",
+                "Caption": "[color=#404040]Activer la section [b]Comparaison Configuration[/b][/color]",
+                "Type": 2,
+                "MaxColumnSpan": 99,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": true,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": true,
+            "Caption": "Marque et Marquage",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "1ffbe7e9-5389-4b34-a1ec-340eda6a6f1c",
+                "Name": "s_glb_marque",
+                "Caption": "[size=1.2em][color=#404040]Marque Saisie[/color][/size]",
+                "Type": 0,
+                "MaxColumnSpan": 1,
+                "Value": "GLB_MRQ_FX",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "DropDown",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "GLB_MRQ_FX",
+                    "Caption": "Franciaflex",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "IDReponseChacal",
+                        "Type": 1,
+                        "Value": "1"
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "GLB_MRQ_FF",
+                    "Caption": "France Fermetures",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "IDReponseChacal",
+                        "Type": 1,
+                        "Value": null
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "GLB_MRQ_FABER",
+                    "Caption": "Faber",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "IDReponseChacal",
+                        "Type": 1,
+                        "Value": null
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "GLB_MRQ_SIPA",
+                    "Caption": "Sipa",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "IDReponseChacal",
+                        "Type": 1,
+                        "Value": "2"
+                      }
+                    ]
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "f4c55f97-316e-4ca5-a142-36ac690e30d5",
+                "Name": "s_glb_marquage",
+                "Caption": "[size=1.2em][color=#404040]Marquage saisi[/color][/size]",
+                "Type": 0,
+                "MaxColumnSpan": 1,
+                "Value": "GLB_MRQG_FX",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "DropDown",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "GLB_MRQG_FX",
+                    "Caption": "Franciaflex",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "IDReponseChacal",
+                        "Type": 1,
+                        "Value": "1"
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "GLB_MRQG_FF",
+                    "Caption": "France Fermeture",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "IDReponseChacal",
+                        "Type": 1,
+                        "Value": null
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "GLB_MRQG_SDF",
+                    "Caption": "Storiste de France",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "IDReponseChacal",
+                        "Type": 1,
+                        "Value": "4"
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "GLB_MRQG_FABER",
+                    "Caption": "Faber",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "IDReponseChacal",
+                        "Type": 1,
+                        "Value": null
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "GLB_MRQG_SIPA",
+                    "Caption": "Sipa",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "IDReponseChacal",
+                        "Type": 1,
+                        "Value": "2"
+                      }
+                    ]
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": true,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": true,
+            "Caption": "Mode debug des traitements liés au rendu visuel",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "210437fe-fce5-46cc-8f4c-dee247cb1dc8",
+                "Name": "v_bool_isDebugWebServiceDessin",
+                "Caption": "[color=#404040]Debug du web service du dessin CPQ[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "a3c8045c-7cdf-4325-9ca3-708fd1dce3ea",
+                "Name": "v_bool_isDebugJsonRendu",
+                "Caption": "[color=#404040]Debug du JSON rendu visuel[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": true,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": true,
+            "Caption": "Mode debug des traitements post-configuration",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "fb0924b6-b9cf-4020-85e2-835c2674d039",
+                "Name": "v_bool_isDebugArc",
+                "Caption": "[color=#404040]Debug ARC / Ordre d'achat[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "7120bb04-d963-404d-899e-196ff854fe8c",
+                "Name": "v_bool_isDebugBom",
+                "Caption": "[color=#404040]Debug de la BOM[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "37687399-49dc-4f6b-a8c1-e23df9733087",
+                "Name": "v_bool_isDebugRemises",
+                "Caption": "[color=#404040]Debug des remises[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "f3e85deb-e464-4e1a-a882-4f0a74882567",
+                "Name": "v_bool_isDebugDelais",
+                "Caption": "[color=#404040]Debug des délais[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "2a1993ef-a84e-44b8-95f1-57c13945fc78",
+                "Name": "v_bool_isDebugCorrespondances",
+                "Caption": "[color=#404040]Debug des correspondances[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "59338ef8-62f4-4ffb-ae21-3c98dd30688e",
+                "Name": "v_bool_isDebugSiteProduction",
+                "Caption": "[color=#404040]Debug du site de production[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "c64a14de-134c-428f-819c-8438b18b4c2b",
+                "Name": "v_bool_isDebugGroupeArticle",
+                "Caption": "[color=#404040]Debug des informations articles[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "be560db5-6a7e-41b1-8dda-d6bf1e57d996",
+                "Name": "v_bool_isDebugCritereLot",
+                "Caption": "[color=#404040]Debug des critères de mise en lot[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "5b7e1970-d9a2-4a1f-a4ba-62e2f4843bd7",
+                "Name": "v_bool_isDebugMarquageCertification",
+                "Caption": "[color=#404040]Debug des marquages / certifications[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "ad42229c-335c-447f-a7f0-4ba9d95b7a88",
+                "Name": "v_bool_isDebugFeatureOption",
+                "Caption": "[color=#404040]Debug des Features & Options[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 1,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": true,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": true,
+            "Caption": "Livraison Express",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "9183db4f-9099-4378-8604-b1d36edba33f",
+                "Name": "c_glb_livraison_express",
+                "Caption": "[color=#404040]Le produit configuré est-il soumis à la livraison express ?[/color]",
+                "Type": 2,
+                "MaxColumnSpan": 99,
+                "Value": "False",
+                "DisplayValue": null,
+                "IsRequired": false,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "CheckBox",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "False",
+                    "Caption": "Non",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  },
+                  {
+                    "Value": "True",
+                    "Caption": "Oui",
+                    "ImageLink": "Files/Images",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": []
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": false,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": true,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": true,
+            "ShowCaption": true,
+            "Caption": "Modele :",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "bfffb35c-a946-4d54-b45e-b0e3292579a2",
+                "Name": "s_ven_modele",
+                "Caption": "",
+                "Type": 0,
+                "MaxColumnSpan": 1,
+                "Value": "ALU_16_25_35",
+                "DisplayValue": null,
+                "IsRequired": true,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 2,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": "https://unityaidecpqpreprod.mac-groupe.com/public/Images/STORE/VEN/Produit/Modele.html?Marque=GLB_MRQ_FX&Valeurs=,,,,,,,,,,",
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "ImageAndTextHorizontal",
+                "DisplayPrecision": null,
+                "DisplayFormat": null,
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [],
+                "SelectableValues": [
+                  {
+                    "Value": "ALU_16_25_35",
+                    "Caption": "Vénitien Alu Tendance",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/STORE/VEN/Produit/Picto",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "CodifGroupeArticle",
+                        "Type": 0,
+                        "Value": "A"
+                      },
+                      {
+                        "Name": "CodifPVDelai",
+                        "Type": 0,
+                        "Value": "ALU_TENDANCE"
+                      },
+                      {
+                        "Name": "DescriptionArc",
+                        "Type": 0,
+                        "Value": "Vénitien Alu Tendance"
+                      },
+                      {
+                        "Name": "Type",
+                        "Type": 0,
+                        "Value": "VENITIEN"
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "BUSINESS",
+                    "Caption": "Vénitien Business",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/STORE/VEN/Produit/Picto",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "CodifGroupeArticle",
+                        "Type": 0,
+                        "Value": "B"
+                      },
+                      {
+                        "Name": "CodifPVDelai",
+                        "Type": 0,
+                        "Value": "BUSINESS"
+                      },
+                      {
+                        "Name": "DescriptionArc",
+                        "Type": 0,
+                        "Value": "Vénitien Business"
+                      },
+                      {
+                        "Name": "Type",
+                        "Type": 0,
+                        "Value": "VENITIEN"
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "ALU_50",
+                    "Caption": "Vénitien Aura",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/STORE/VEN/Produit/Picto",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "CodifGroupeArticle",
+                        "Type": 0,
+                        "Value": "A"
+                      },
+                      {
+                        "Name": "CodifPVDelai",
+                        "Type": 0,
+                        "Value": "ALU_TENDANCE"
+                      },
+                      {
+                        "Name": "DescriptionArc",
+                        "Type": 0,
+                        "Value": "Vénitien Alu Tendance"
+                      },
+                      {
+                        "Name": "Type",
+                        "Type": 0,
+                        "Value": "VENITIEN"
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "BOIS",
+                    "Caption": "Vénitien Bois",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/STORE/VEN/Produit/Picto",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "CodifGroupeArticle",
+                        "Type": 0,
+                        "Value": "C"
+                      },
+                      {
+                        "Name": "CodifPVDelai",
+                        "Type": 0,
+                        "Value": "BOIS"
+                      },
+                      {
+                        "Name": "DescriptionArc",
+                        "Type": 0,
+                        "Value": "Vénitien Bois"
+                      },
+                      {
+                        "Name": "Type",
+                        "Type": 0,
+                        "Value": "VENITIEN"
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "ISODESIGN",
+                    "Caption": "Vénitien Isodesign",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/STORE/VEN/Produit/Picto",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "CodifGroupeArticle",
+                        "Type": 0,
+                        "Value": "E"
+                      },
+                      {
+                        "Name": "CodifPVDelai",
+                        "Type": 0,
+                        "Value": "ISODESIGN"
+                      },
+                      {
+                        "Name": "DescriptionArc",
+                        "Type": 0,
+                        "Value": "Vénitien Isodesign"
+                      },
+                      {
+                        "Name": "Type",
+                        "Type": 0,
+                        "Value": "PARECLOSES"
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "INTEGRE",
+                    "Caption": "Vénitien Intégré",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/STORE/VEN/Produit/Picto",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "CodifGroupeArticle",
+                        "Type": 0,
+                        "Value": "F"
+                      },
+                      {
+                        "Name": "CodifPVDelai",
+                        "Type": 0,
+                        "Value": "INTEGRE"
+                      },
+                      {
+                        "Name": "DescriptionArc",
+                        "Type": 0,
+                        "Value": "Vénitien Intégré"
+                      },
+                      {
+                        "Name": "Type",
+                        "Type": 0,
+                        "Value": "INTEGRE"
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "VIVRE",
+                    "Caption": "Vénitien VIVRe",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/STORE/VEN/Produit/Picto",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "CodifGroupeArticle",
+                        "Type": 0,
+                        "Value": "G"
+                      },
+                      {
+                        "Name": "CodifPVDelai",
+                        "Type": 0,
+                        "Value": "VIVRE"
+                      },
+                      {
+                        "Name": "DescriptionArc",
+                        "Type": 0,
+                        "Value": "Vénitien VIVRe"
+                      },
+                      {
+                        "Name": "Type",
+                        "Type": 0,
+                        "Value": "VENITIEN"
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "SELECT",
+                    "Caption": "Vénitien Select",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/STORE/VEN/Produit/Picto",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "CodifGroupeArticle",
+                        "Type": 0,
+                        "Value": "K"
+                      },
+                      {
+                        "Name": "CodifPVDelai",
+                        "Type": 0,
+                        "Value": "SELECT"
+                      },
+                      {
+                        "Name": "DescriptionArc",
+                        "Type": 0,
+                        "Value": "Vénitien Select"
+                      },
+                      {
+                        "Name": "Type",
+                        "Type": 0,
+                        "Value": "VENITIEN"
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "VELUM",
+                    "Caption": "Vénitien Vélum",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/STORE/VEN/Produit/Picto",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "CodifGroupeArticle",
+                        "Type": 0,
+                        "Value": "I"
+                      },
+                      {
+                        "Name": "CodifPVDelai",
+                        "Type": 0,
+                        "Value": "VELUM"
+                      },
+                      {
+                        "Name": "DescriptionArc",
+                        "Type": 0,
+                        "Value": "Vénitien Vélum"
+                      },
+                      {
+                        "Name": "Type",
+                        "Type": 0,
+                        "Value": "VENITIEN"
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "CLOISOON",
+                    "Caption": "Vénitien Cloisoon",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/STORE/VEN/Produit/Picto",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "CodifGroupeArticle",
+                        "Type": 0,
+                        "Value": "D"
+                      },
+                      {
+                        "Name": "CodifPVDelai",
+                        "Type": 0,
+                        "Value": "CLOISOON"
+                      },
+                      {
+                        "Name": "DescriptionArc",
+                        "Type": 0,
+                        "Value": "Vénitien Cloisoon"
+                      },
+                      {
+                        "Name": "Type",
+                        "Type": 0,
+                        "Value": "VENITIEN"
+                      }
+                    ]
+                  },
+                  {
+                    "Value": "STORCLIP",
+                    "Caption": "Clip'Vénitien",
+                    "ImageLink": "https://configurator.eu1.inforcloudsuite.com/Content/Default/Files/Images/STORE/VEN/Produit/Picto",
+                    "IsVisible": true,
+                    "IsEnabled": true,
+                    "Tooltip": "",
+                    "CustomProperties": [
+                      {
+                        "Name": "CodifGroupeArticle",
+                        "Type": 0,
+                        "Value": "H"
+                      },
+                      {
+                        "Name": "CodifPVDelai",
+                        "Type": 0,
+                        "Value": "STORCLIP"
+                      },
+                      {
+                        "Name": "DescriptionArc",
+                        "Type": 0,
+                        "Value": "Clip'Vénitien"
+                      },
+                      {
+                        "Name": "Type",
+                        "Type": 0,
+                        "Value": "PARECLOSES"
+                      }
+                    ]
+                  }
+                ],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": true,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": true,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          }
+        ]
+      },
+      {
+        "Caption": "[b]Dimensions[/b]",
+        "IsVisible": true,
+        "Screens": [
+          {
+            "IsVisible": true,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": true,
+            "ShowCaption": true,
+            "Caption": "Largeur : ",
+            "ShowDescription": true,
+            "Description": "La largeur doit être comprise entre 211mm et 4000mm.",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "6d512ac5-cd45-472d-b700-c214d634616e",
+                "Name": "s_ven_largeur",
+                "Caption": "",
+                "Type": 1,
+                "MaxColumnSpan": 1,
+                "Value": "2000",
+                "DisplayValue": null,
+                "IsRequired": true,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "NumericTextBox",
+                "DisplayPrecision": "0",
+                "DisplayFormat": "Decimal",
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [
+                  {
+                    "Min": 211,
+                    "Max": 4000,
+                    "Increment": 1
+                  }
+                ],
+                "SelectableValues": [],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          },
+          {
+            "IsVisible": true,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": true,
+            "ShowCaption": false,
+            "Caption": "",
+            "ShowDescription": false,
+            "Description": "",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": null,
+            "ImageLink": null,
+            "ScreenOptions": []
+          },
+          {
+            "IsVisible": true,
+            "ShowCaption": true,
+            "Caption": "Hauteur :",
+            "ShowDescription": true,
+            "Description": "La hauteur doit être comprise entre 200mm et 5000mm.",
+            "ShowSeparator": false,
+            "ApplicationLink": null,
+            "InformationLink": "",
+            "ImageLink": null,
+            "ScreenOptions": [
+              {
+                "ID": "83b12f59-2c75-4299-8a5e-144c05ebd3dd",
+                "Name": "s_ven_hauteur",
+                "Caption": "",
+                "Type": 1,
+                "MaxColumnSpan": 1,
+                "Value": "",
+                "DisplayValue": null,
+                "IsRequired": true,
+                "IsEnabled": true,
+                "IsVisible": true,
+                "AutoContinueMode": 1,
+                "IsHighlighted": false,
+                "Tooltip": "",
+                "InformationMessage": "",
+                "ApplicationLink": null,
+                "InformationLink": null,
+                "ExternalApplicationTargetName": null,
+                "ExternalApplicationButtonType": "None",
+                "ExternalApplicationButtonCaption": null,
+                "DisplayType": "NumericTextBox",
+                "DisplayPrecision": "0",
+                "DisplayFormat": "Decimal",
+                "IsPinnable": false,
+                "IsPinnableAcross": false,
+                "IsPinned": false,
+                "IsGlobalPinned": false,
+                "IsOverridden": false,
+                "IsDisplayableInRapidEntry": false,
+                "Ranges": [
+                  {
+                    "Min": 200,
+                    "Max": 5000,
+                    "Increment": 1
+                  }
+                ],
+                "SelectableValues": [],
+                "ContentValue": {
+                  "Id": null,
+                  "FileName": null,
+                  "FileSize": 0,
+                  "FilePath": null,
+                  "FileType": null,
+                  "Base64": null
+                },
+                "Columns": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Messages": [],
+    "ActionableMessage": null,
+    "Details": [
+      {
+        "Caption": "[size=1.2em][b]Détail des prix :[/b][/size]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": " ",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "[size=1.3em][b]DétailConfiguration╞═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/size]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": " ",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "[color=dimgray][size=1.2em][i][b]Informations Globales :[/b][/i][/size][/color]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Base :",
+        "Value": "TRN",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Type d'utilisateur :",
+        "Value": "Default",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "N° Variante : ",
+        "Value": "FA31000",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Source de l'application :",
+        "Value": "Boutique web Faber",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Type de saisie :",
+        "Value": "Devis",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Type de devis/commande :",
+        "Value": "Diffus",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Emballage chantier ?",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Date d'application :",
+        "Value": "15/10/2025 10:23:03",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Configuration commerciale ?",
+        "Value": "Oui",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Configuration technique ?",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Configuration job background ?",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Structure projet générée ?",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Configurateur :",
+        "Value": "Store Vénitien",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Marque calculée :",
+        "Value": "Franciaflex",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Marquage :",
+        "Value": "Franciaflex",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Livraison Express :",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "[color=dimgray][size=1.2em][i][b]Informations Remises :[/b][/i][/size][/color]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "[color=dimgray][size=1.2em][i][b]Informations Eco-participation :[/b][/i][/size][/color]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Liste des éco-participations :",
+        "Value": "{}",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "[color=dimgray][size=1.2em][i][b]Informations Délais :[/b][/i][/size][/color]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "[color=dimgray][size=1.2em][i][b]Informations Client :[/b][/i][/size][/color]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Récupération des infos via Web Service ?",
+        "Value": "Oui",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Code client :",
+        "Value": "C00000001",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Nom client :",
+        "Value": "BAIE DEMO TEST",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Famille client :",
+        "Value": "CAF910    ",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Sous-famille client :",
+        "Value": "                                                  ",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Société client :",
+        "Value": "VFX000",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Typologie client :",
+        "Value": "C04",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Région commerciale client :",
+        "Value": "FX-RSO",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Département client :",
+        "Value": "14 ",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "Marque fiche client :",
+        "Value": "XFX",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "[color=dimgray][size=1.2em][i][b]Informations Produit :[/b][/i][/size][/color]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      },
+      {
+        "Caption": "[color=dimgray][size=1.2em][i][b]Informations Dimensions :[/b][/i][/size][/color]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 4
+      }
+    ],
+    "SelectionSummary": [
+      {
+        "Caption": "[b]Produit[/b]",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 0
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[size=1.2em][color=#404040]Déclencher une pause en fin de section afin de paramétrer les options souhaitées[/color][/size]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[size=1.2em][color=#404040]Déclencher une pause au niveau d'un attribut de composant (à la fin du traitement choisi)[/color][/size]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "Mode Debug du scénario commercial",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Activer le mode Debug[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "Simuler la saisie",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Debug du web service de récupération des informations de la fiche client[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[size=1.2em][color=#404040]Simuler l'environnement (Tenant)[/color][/size]",
+        "Value": "TRN",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[size=1.2em][color=#404040]Simuler un client (indiquer un code client, ex : C00000001)[/color][/size]",
+        "Value": "C00000001",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[size=1.2em][color=#404040]Simuler la date d'application[/color][/size]",
+        "Value": "2025-10-15T08:23:03.0584355Z",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[size=1.2em][color=#404040]Simuler le type de devis/commande[/color][/size]",
+        "Value": "Diffus",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Simuler le choix d'[b]emballage chantier[/b][/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "Simuler le type de configuration",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Configuration commerciale[/color]",
+        "Value": "Oui",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Configuration technique[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040][color=dimgray][i]Configuration par un job en background[/i][/color][/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "Récupération d'une configuration existante",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[size=1.2em][color=#404040]Indiquer le n° de variante de la configuration à charger[/color][/size]",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Debug du web service de récupération des informations de configuration[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "Comparaison de configuration",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Activer la section [b]Comparaison Configuration[/b][/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "Marque et Marquage",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[size=1.2em][color=#404040]Marque Saisie[/color][/size]",
+        "Value": "Franciaflex",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[size=1.2em][color=#404040]Marquage saisi[/color][/size]",
+        "Value": "Franciaflex",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "Mode debug des traitements liés au rendu visuel",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Debug du web service du dessin CPQ[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Debug du JSON rendu visuel[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "Mode debug des traitements post-configuration",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Debug ARC / Ordre d'achat[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Debug de la BOM[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Debug des remises[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Debug des délais[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Debug des correspondances[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Debug du site de production[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Debug des informations articles[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Debug des critères de mise en lot[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Debug des marquages / certifications[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Debug des Features & Options[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "Livraison Express",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[color=#404040]Le produit configuré est-il soumis à la livraison express ?[/color]",
+        "Value": "Non",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "Modele :",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": "Vénitien Alu Tendance",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "[b]Dimensions[/b]",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 0
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "Largeur : ",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": "2000",
+        "IsHighlighted": false,
+        "Type": 2
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "Hauteur :",
+        "Value": null,
+        "IsHighlighted": false,
+        "Type": 1
+      },
+      {
+        "Caption": "",
+        "Value": "",
+        "IsHighlighted": false,
+        "Type": 2
+      }
+    ],
+    "ImageUrl": "",
+    "IsExecutionComplete": false,
+    "OptionToFocus": "83b12f59-2c75-4299-8a5e-144c05ebd3dd",
+    "ConfiguredPrice": 0,
+    "CurrencyCode": null,
+    "ExchangeRate": 0,
+    "CultureName": "fr-FR",
+    "IsPartialSaveEnabled": true,
+    "SessionID": "T4TVNDJFLAAWUGL4_TRN~Default~f86e0451-0e56-4bfc-9a50-ad4652298517",
+    "DefaultInformationPane": "Detail",
+    "ExternalApplications": [],
+    "DataGrids": [],
+    "TextFormattingEnabled": true,
+    "LayoutName": "Default"
+  }
+}

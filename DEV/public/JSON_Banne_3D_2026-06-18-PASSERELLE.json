@@ -1,0 +1,870 @@
+{
+  "idconfig": "TST_BANNE_TEST_001",
+  "output": "3d",
+  "rendering": {
+    "shadows": true,
+    "shadowQuality": "medium",
+    "environment": "sunlight",
+    "ambientIntensity": 0.4
+  },
+  "materials": [
+    {
+      "id": "MAT_PROFIL_ALU",
+      "color": "#aaaaaa",
+      "opacity": 1.0,
+      "metalness" : 0.5,
+      "roughness" : 0.01,
+      "envMapIntensity": 0.6
+    },
+    {
+      "id": "MAT_EMBOUT_PLASTIQUE",
+      "color": "#8b8b8b",
+      "roughness": 0.5,
+      "metalness": 0.0,
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_TOILE_STD",
+      "map": "T_Test_Toile.png",
+      "texturesMmWidth":200,
+      "roughness": 0.95,
+      "metalness": 0.0,
+      "bothSided": true,
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_SOL",
+      "map": "patio-sol/patio_tiles_diff_1k.jpg",
+      "normalMap": "patio-sol/patio_tiles_nor_gl_1k.png",
+      "roughnessMap": "patio-sol/patio_tiles_rough_1k.png",
+      "texturesMmWidth":2500,
+      "roughness": 1.0,
+      "metalness": 0.0,
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_MUR",
+      "map": "white-plaster/white_plaster_02_diff_1k.jpg",
+      "normalMap": "white-plaster/white_plaster_02_nor_gl_1k.png",
+      "roughnessMap": "white-plaster/white_plaster_02_rough_1k.jpg",
+      "texturesMmWidth":4000,
+      "metalness": 0.0,
+      "opacity": 1.0
+    }
+  ],
+  "elements": [
+    {
+      "id": "ENVIRONMENT",
+      "type": "Group",
+      "description": "Environnement de scène",
+      "elements": [
+        {
+          "id": "SOL",
+          "description": "Sol principal",
+          "type": "Plane",
+          "referenceComponent": "SOL",
+          "material": "MAT_SOL",
+          "receiveShadow": true,
+          "position": {
+            "x": -4000,
+            "y": -50,
+            "z": 0
+          },
+          "dimension": {
+            "width": 12000,
+            "height": 100,
+            "depth": 10000
+          }
+        },
+        {
+          "id": "MUR",
+          "description": "Mur principal",
+          "type": "Box",
+          "referenceComponent": "MUR_1",
+          "material": "MAT_MUR",
+          "receiveShadow": true,
+          "position": {
+            "x": -4000,
+            "y": 0,
+            "z": -200
+          },
+          "dimension": {
+            "width": 12000,
+            "height": 5000,
+            "depth": 200
+          }
+        }
+      ]
+    },
+    {
+      "id": "ST_BAN",
+      "description": "Store banne complet",
+      "type": "Group",
+      "position": {
+        "x": 0,
+        "y": 2320,
+        "z": 0
+      },
+      "dimension": {
+        "width": 4000,
+        "height": 520,
+        "depth": 3500
+      },
+      "elements": [
+        {
+          "id": "ST_BAN_COFFRE_ALLURE",
+          "description": "Coffre principal",
+          "type": "Group",
+          "dimension": {
+            "width": 4000,
+            "height": 236,
+            "depth": 251
+          },
+          "reference": [-1, 1, -1],
+          "position": {
+            "x": 0,
+            "y": -236,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "elements": [
+            {
+              "id": "ST_BAN_COFFRE_PROFIL_ALLURE",
+              "description": "Profil coffre allure",
+              "meshId": "ST_BAN_COFFRE",
+              "type": "Mesh",
+              "material": "MAT_PROFIL_ALU",
+              "position": {
+                "x": 50,
+                "y": 0,
+                "z": 0
+              },
+              "dimension": {
+                "length": 3900
+              }
+            },
+            {
+              "id": "ST_BAN_COFFRE_PROFIL_FIN_ALLURE",
+              "description": "Profil coffre allure",
+              "meshId": "ST_BAN_COFFRE_FIN",
+              "type": "Mesh",
+              "material": "MAT_PROFIL_ALU",
+              "position": {
+                "x": 50,
+                "y": 0,
+                "z": 0
+              },
+              "dimension": {
+                "length": 3900
+              }
+            },
+            {
+              "id": "ST_BAN_COFFRE_PROFIL_ALLURE",
+              "description": "Profil coffre allure",
+              "meshId": "ST_BAN_TUBE",
+              "type": "Mesh",
+              "material": "MAT_PROFIL_ALU",
+              "position": {
+                "x": 60,
+                "y": 0,
+                "z": 0
+              },
+              "dimension": {
+                "length": 3880
+              }
+            },
+            {
+              "id": "ST_BAN_SOUS_FACE_PROFIL_ALLURE",
+              "description": "Profil sous face allure",
+              "meshId": "ST_BAN_SOUSFACE",
+              "type": "Mesh",
+              "material": "MAT_PROFIL_ALU",
+              "position": {
+                "x": 50,
+                "y": 0,
+                "z": 0
+              },
+              "dimension": {
+                "length": 3900
+              }
+            },
+            {
+              "id": "ST_BAN_COFFRE_EMBOUT_GAUCHE_ALLURE",
+              "description": "Joue gauche coffre",
+              "meshId": "ST_BAN_COFFRE_JOUE_GAUCHE",
+              "type": "Mesh",
+              "material": "MAT_EMBOUT_PLASTIQUE",
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 8
+              }
+            },
+            {
+              "id": "ST_BAN_COFFRE_EMBOUT_DROIT_ALLURE",
+              "description": "Joue droit coffre",
+              "meshId": "ST_BAN_COFFRE_JOUE_DROITE",
+              "type": "Mesh",
+              "material": "MAT_EMBOUT_PLASTIQUE",
+              "reference": [1, -1, -1],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 8
+              }
+            },
+            {
+              "id": "ST_BAN_BRAS_GAUCHE_ALLURE",
+              "description": "Bras gauche groupe",
+              "type": "Group",
+              "position": {
+                "x": 100,
+                "y": 0,
+                "z": 0
+              },
+              "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "elements": [
+                {
+                  "id": "ST_BAN_BRAS_SUPPORT_GAUCHE",
+                  "description": "Embout bras gauche",
+                  "meshId": "ST_BAN_BRAS_SUPPORT_GAUCHE",
+                  "type": "Mesh",
+                  "material": "MAT_PROFIL_ALU",
+                  "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  }
+                },
+                {
+                  "id": "BRAS_GAUCHE_AVAL_ARTICULATION_1",
+                  "description": "",
+                  "type": "Group",
+                  "position": {
+                    "x": 0,
+                    "y": 35,
+                    "z": 154
+                  },
+                  "rotation": {
+                    "x": 12,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "elements": [
+                    {
+                      "id": "ST_BAN_BRAS_SUPPORT_ARTICULATION_GAUCHE",
+                      "description": "",
+                        "meshId": "ST_BAN_BRAS_SUPPORT_ARTICULATION_GAUCHE",
+                      "type": "Mesh",
+                      "material": "MAT_PROFIL_ALU",
+                      "position": {
+                        "x": 46,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    {
+                      "id": "BRAS_GAUCHE_AVAL_ARTICULATION_2",
+                      "description": "",
+                      "type": "Group",
+                      "position": {
+                        "x": 116,
+                        "y": 33,
+                        "z": 0
+                      },
+                      "rotation": {
+                        "x": 0,
+                        "y": -75,
+                        "z": 0
+                      },
+                      "dimension": {
+                        "width": 1800,
+                        "height": 1,
+                        "depth": 1
+                     },
+                     "elements": [
+                        {
+                           "id": "ST_BAN_BRAS_ARTICULATION_SUPPORT_GAUCHE",
+                           "description": "",
+                           "meshId": "ST_BAN_BRAS_ARTICULATION_SUPPORT_GAUCHE",
+                           "type": "Mesh",
+                           "material": "MAT_PROFIL_ALU",
+                           "position": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 0
+                           }
+                        },{
+                           "id": "ST_BAN_BRAS_ARRIERE",
+                           "description": "",
+                           "meshId": "ST_BAN_BRAS_ARRIERE",
+                           "type": "Mesh",
+                           "material": "MAT_PROFIL_ALU",
+                           "position": {
+                              "x": 20,
+                              "y": -6,
+                              "z": 0
+                           },
+                           "dimension":{
+                              "length":1780
+                           }
+                        },{
+                           "id": "ST_BAN_BRAS_ARTICULATION_ARRIERE_FEMELLE_GAUCHE",
+                           "description": "",
+                           "meshId": "ST_BAN_BRAS_ARTICULATION_ARRIERE_FEMELLE_GAUCHE",
+                           "type": "Mesh",
+                           "material": "MAT_PROFIL_ALU",
+                           "reference": [1, -1, -1],
+                           "position": {
+                              "x": -21,
+                              "y": 0,
+                              "z": 0
+                           }
+                        },{
+                           "id": "BRAS_GAUCHE_AVAL_ARTICULATION_3A",
+                           "description": "",
+                           "type": "Group",
+                           "reference": [1, -1, -1],
+                           "position": {
+                              "x": 31,
+                              "y": -4,
+                              "z": 22
+                           },
+                           "rotation": {
+                              "x": 1.43,
+                              "y": 0,
+                              "z": 6.59
+                           },
+                           "elements": [
+                              {
+                                 "id": "BRAS_GAUCHE_AVAL_ARTICULATION_3B",
+                                 "description": "",
+                                 "type": "Group",
+                                 "dimension": {
+                                    "width": 1000,
+                                    "height": 1,
+                                    "depth": 1
+                                 },
+                                 "rotation": {
+                                    "x": 0,
+                                    "y": -30,
+                                    "z": 0
+                                 },
+                                 "elements": [
+                                    {
+                                       "id": "ST_BAN_BRAS_ARTICULATION_AVANT_MALE_GAUCHE",
+                                       "description": "",
+                                       "meshId": "ST_BAN_BRAS_ARTICULATION_AVANT_MALE_GAUCHE",
+                                       "type": "Mesh",
+                                       "material": "MAT_PROFIL_ALU",
+                                       "position": {
+                                          "x": 0,
+                                          "y": 0,
+                                          "z": 0
+                                       },
+                                       "rotation": {
+                                          "x": 0,
+                                          "y": 180,
+                                          "z": 0
+                                       }
+                                    },{
+                                       "id": "BRAS_GAUCHE_AVAL_ARTICULATION_3C",
+                                       "description": "",
+                                       "type": "Group",
+                                       "position": {
+                                          "x": 0,
+                                          "y": 2,
+                                          "z": -17
+                                       },
+                                       "rotation": {
+                                          "x": 1.43,
+                                          "y": 0,
+                                          "z": 6.59
+                                       },
+                                       "elements": [
+                                          {
+                                             "id": "ST_BAN_BRAS_AVANT",
+                                             "description": "",
+                                             "meshId": "ST_BAN_BRAS_AVANT",
+                                             "type": "Mesh",
+                                             "material": "MAT_PROFIL_ALU",
+                                             "position": {
+                                                "x": 20,
+                                                "y": 0,
+                                                "z": 0
+                                             },
+                                             "dimension": {
+                                                "length": 1560
+                                             }
+                                          },{
+                                             "id": "ST_BAN_BRAS_EMBOUT_AVANT_GAUCHE",
+                                             "description": "",
+                                             "meshId": "ST_BAN_BRAS_EMBOUT_AVANT_GAUCHE",
+                                             "type": "Mesh",
+                                             "material": "MAT_PROFIL_ALU",
+                                             "position": {
+                                                "x": 1580,
+                                                "y": 0,
+                                                "z": 0
+                                             }
+                                          },{
+                                             "id": "ST_BAN_BRAS_MAIN_GAUCHE",
+                                             "description": "",
+                                             "meshId": "ST_BAN_BRAS_MAIN_GAUCHE",
+                                             "type": "Mesh",
+                                             "material": "MAT_PROFIL_ALU",
+                                             "position": {
+                                                "x": 1597,
+                                                "y": -0.018,
+                                                "z": 0
+                                             },
+                                             "rotation": {
+                                                "x": 0,
+                                                "y": 105,
+                                                "z": 0
+                                             }
+                                          }
+                                       ]
+                                    }
+                                       
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ST_BAN_BRAS_DROIT_ALLURE",
+              "description": "Bras droit groupe",
+              "type": "Group",
+              "position": {
+                "x": 3900,
+                "y": 0,
+                "z": 0
+              },
+              "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "elements": [
+                {
+                  "id": "ST_BAN_BRAS_SUPPORT_DROIT",
+                  "description": "Embout bras droit",
+                  "meshId": "ST_BAN_BRAS_SUPPORT_DROIT",
+                  "type": "Mesh",
+                  "material": "MAT_PROFIL_ALU",
+                  "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  }
+                },
+                {
+                  "id": "BRAS_DROIT_AVAL_ARTICULATION_1",
+                  "description": "",
+                  "type": "Group",
+                  "position": {
+                    "x": 0,
+                    "y": 35,
+                    "z": 154
+                  },
+                  "rotation": {
+                    "x": 12,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "elements": [
+                    {
+                      "id": "ST_BAN_BRAS_SUPPORT_ARTICULATION_DROIT",
+                      "description": "",
+                        "meshId": "ST_BAN_BRAS_SUPPORT_ARTICULATION_DROIT",
+                      "type": "Mesh",
+                      "material": "MAT_PROFIL_ALU",
+                      "position": {
+                        "x": -46,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    {
+                      "id": "BRAS_DROIT_AVAL_ARTICULATION_2",
+                      "description": "",
+                      "type": "Group",
+                      "position": {
+                        "x": -116,
+                        "y": 33,
+                        "z": 0
+                      },
+                      "rotation": {
+                        "x": 0,
+                        "y": -105,
+                        "z": 0
+                      },
+                      "dimension": {
+                        "width": 1800,
+                        "height": 1,
+                        "depth": 1
+                     },
+                     "elements": [
+                        {
+                           "id": "ST_BAN_BRAS_ARTICULATION_SUPPORT_DROIT",
+                           "description": "",
+                           "meshId": "ST_BAN_BRAS_ARTICULATION_SUPPORT_DROIT",
+                           "type": "Mesh",
+                           "material": "MAT_PROFIL_ALU",
+                           "position": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 0
+                           },
+                           "rotation": {
+                              "x": 0,
+                              "y": 180,
+                              "z": 0
+                           }
+                        },{
+                           "id": "ST_BAN_BRAS_ARRIERE",
+                           "description": "",
+                           "meshId": "ST_BAN_BRAS_ARRIERE",
+                           "type": "Mesh",
+                           "material": "MAT_PROFIL_ALU",
+                           "position": {
+                              "x": 20,
+                              "y": -6,
+                              "z": 0
+                           },
+                           "dimension":{
+                              "length":1780
+                           }
+                        },{
+                           "id": "ST_BAN_BRAS_ARTICULATION_ARRIERE_FEMELLE_DROIT",
+                           "description": "",
+                           "meshId": "ST_BAN_BRAS_ARTICULATION_ARRIERE_FEMELLE_DROIT",
+                           "type": "Mesh",
+                           "material": "MAT_PROFIL_ALU",
+                           "reference": [1, -1, -1],
+                           "position": {
+                              "x": -21,
+                              "y": 0,
+                              "z": 0
+                           },
+                           "rotation": {
+                              "x": 0,
+                              "y": 180,
+                              "z": 0
+                           }
+                        },{
+                           "id": "BRAS_DROIT_AVAL_ARTICULATION_3A",
+                           "description": "",
+                           "type": "Group",
+                           "reference": [1, -1, -1],
+                           "position": {
+                              "x": 31,
+                              "y": -4,
+                              "z": -22
+                           },
+                           "rotation": {
+                              "x": -1.43,
+                              "y": 0,
+                              "z": 6.59
+                           },
+                           "elements": [
+                              {
+                                 "id": "BRAS_DROIT_AVAL_ARTICULATION_3B",
+                                 "description": "",
+                                 "type": "Group",
+                                 "rotation": {
+                                    "x": 0,
+                                    "y": 30,
+                                    "z": 0
+                                 },
+                                 "elements": [
+                                    {
+                                       "id": "temp",
+                                       "description": "",
+                                       "type": "Group",
+                                       "dimension": {
+                                          "width": 1,
+                                          "height": 100,
+                                          "depth": 1
+                                       },
+                                       "position": {
+                                          "x": 0,
+                                          "y": -50,
+                                          "z": 0
+                                       }
+                                    },
+                                    {
+                                       "id": "ST_BAN_BRAS_ARTICULATION_AVANT_MALE_DROIT",
+                                       "description": "",
+                                       "meshId": "ST_BAN_BRAS_ARTICULATION_AVANT_MALE_DROIT",
+                                       "type": "Mesh",
+                                       "material": "MAT_PROFIL_ALU",
+                                       "position": {
+                                          "x": 0,
+                                          "y": 0,
+                                          "z": 0
+                                       },
+                                       "rotation": {
+                                          "x": 0,
+                                          "y": 0,
+                                          "z": 0
+                                       }
+                                    },{
+                                       "id": "BRAS_DROIT_AVAL_ARTICULATION_3C",
+                                       "description": "",
+                                       "type": "Group",
+                                       "position": {
+                                          "x": 0,
+                                          "y": 2,
+                                          "z": 17
+                                       },
+                                       "rotation": {
+                                          "x": 1.43,
+                                          "y": 0,
+                                          "z": 6.59
+                                       },
+                                       "elements": [
+                                          {
+                                             "id": "ST_BAN_BRAS_AVANT",
+                                             "description": "",
+                                             "meshId": "ST_BAN_BRAS_AVANT",
+                                             "type": "Mesh",
+                                             "material": "MAT_PROFIL_ALU",
+                                             "position": {
+                                                "x": 20,
+                                                "y": 0,
+                                                "z": 0
+                                             },
+                                             "dimension": {
+                                                "length": 1560
+                                             }
+                                          },{
+                                             "id": "ST_BAN_BRAS_EMBOUT_AVANT_DROIT",
+                                             "description": "",
+                                             "meshId": "ST_BAN_BRAS_EMBOUT_AVANT_DROIT",
+                                             "type": "Mesh",
+                                             "material": "MAT_PROFIL_ALU",
+                                             "position": {
+                                                "x": 1580,
+                                                "y": 0,
+                                                "z": 0
+                                             }
+                                          },{
+                                             "id": "ST_BAN_BRAS_MAIN_DROIT",
+                                             "description": "",
+                                             "meshId": "ST_BAN_BRAS_MAIN_DROIT",
+                                             "type": "Mesh",
+                                             "material": "MAT_PROFIL_ALU",
+                                             "position": {
+                                                "x": 1597,
+                                                "y": -0.018,
+                                                "z": 0
+                                             },
+                                             "rotation": {
+                                                "x": 0,
+                                                "y": 75,
+                                                "z": 0
+                                             }
+                                          }
+                                       ]
+                                    }
+                                       
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ST_BAN_TOILE_STD",
+          "description": "Toile principale",
+          "meshId": "ST_BAN_TOILE",
+          "type": "Plane",
+          "material": "MAT_TOILE_STD",
+          "castShadow": true,
+          "receiveShadow": true,
+          "reference": [-1, 1, -1],
+          "position": {
+            "x": 60,
+            "y": -33,
+            "z": 100
+          },
+          "dimension": {
+            "width": 3900,
+            "height": 2,
+            "depth": 3350
+          },
+          "rotation": {
+            "x": 6.575,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "id": "ST_BAN_BARRE_DE_CHARGE_ALLURE",
+          "description": "Barre de charge",
+          "meshId": "ST_BAN_BARRE_CHARGE",
+          "type": "Group",
+          "position": {
+            "x": 0,
+            "y": -75,
+            "z": 3370
+          },
+          "dimension": {
+            "width": 4000,
+            "height": 0,
+            "depth": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "elements": [
+            {
+              "id": "ST_BAN_BARRE_CHARGE",
+              "description": "Profil barre de charge allure",
+              "meshId": "ST_BAN_BARRE_CHARGE",
+              "type": "Mesh",
+              "material": "MAT_PROFIL_ALU",
+              "position": {
+                "x": 5,
+                "y": 0,
+                "z": 0
+              },
+              "dimension": {
+                "length": 3990
+              }
+            },
+            {
+              "id": "ST_BAN_BARRE_CHARGE_JOUE_GAUCHE",
+              "description": "Embout gauche barre",
+              "meshId": "ST_BAN_BARRE_CHARGE_JOUE_GAUCHE",
+              "type": "Mesh",
+              "material": "MAT_EMBOUT_PLASTIQUE",
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              }
+            },
+            {
+              "id": "ST_BAN_BARRE_CHARGE_JOUE_DROITE",
+              "description": "Embout droit barre",
+              "meshId": "ST_BAN_BARRE_CHARGE_JOUE_DROITE",
+              "type": "Mesh",
+              "material": "MAT_EMBOUT_PLASTIQUE",
+              "position": {
+                "x": 3995,
+                "y": 0,
+                "z": 0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cotations": [
+    {
+      "id": "DIM_LARGEUR_ST_BAN",
+      "description": "Largeur du store",
+      "color": "#3F61AA",
+      "start": {
+        "x": 0,
+        "y": 3000,
+        "z": 3000
+      },
+      "end": {
+        "x": 4000,
+        "y": 3000,
+        "z": 3000
+      },
+      "text": "Largeur 4000 mm"
+    },
+    {
+      "id": "DIM_AVANCEE_ST_BAN",
+      "description": "Avancée du store",
+      "color": "#3F61AA",
+      "start": {
+        "x": 500,
+        "y": 3000,
+        "z": 0
+      },
+      "end": {
+        "x": 500,
+        "y": 3000,
+        "z": 3500
+      },
+      "text": "Avancée 3000 mm"
+    },
+    {
+      "id": "DIM_AVANCEE_ST_BAN",
+      "description": "Avancée du store",
+      "color": "#3F61AA",
+      "start": {
+        "x": 500,
+        "y": 3000,
+        "z": 0
+      },
+      "end": {
+        "x": 500,
+        "y": 3000,
+        "z": 3500
+      },
+      "text": "Avancée 3000 mm"
+    },
+    {
+      "id": "DIM_HAUTEUR1_ST_BAN",
+      "description": "Avancée du store",
+      "color": "#3F61AA",
+      "start": {
+        "x": -200,
+        "y": 0,
+        "z": 200
+      },
+      "end": {
+        "x": -200,
+        "y": 2320,
+        "z": 200
+      },
+      "text": "Avancée 3000 mm"
+    },
+    {
+      "id": "DIM_HAUTEUR2_ST_BAN",
+      "description": "Avancée du store",
+      "color": "#3F61AA",
+      "start": {
+        "x": -200,
+        "y": 0,
+        "z": 3600
+      },
+      "end": {
+        "x": -200,
+        "y": 1800,
+        "z": 3600
+      },
+      "text": "Avancée 3000 mm"
+    }
+  ]
+}

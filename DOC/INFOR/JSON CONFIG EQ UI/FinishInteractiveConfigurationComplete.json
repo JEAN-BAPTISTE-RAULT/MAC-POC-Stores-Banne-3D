@@ -1,0 +1,833 @@
+{
+  "requete_envoyee": {
+    "method": "POST",
+    "url": "https://mingle-ionapi.eu1.inforcloudsuite.com/T4TVNDJFLAAWUGL4_TRN/CPQ/api/v4/ProductConfigurator/FinishInteractiveConfiguration",
+    "headers": {
+      "Authorization": "Bearer eyJraWQiOiJrZzo2N2U1ZDM0ZS02MTkzLTQwYjEtYTJkZS1kNzNlYjhlY2VkYTkiLCJhbGciOiJSUzI1NiJ9.eyJTZXJ2aWNlQWNjb3VudCI6IlQ0VFZOREpGTEFBV1VHTDRfVFJOI0REWVNoS3Bra2R2cGJ2UEZmVU9uYjEyWEh2Y0MzNXpNa3dmX1g3dGYzeVdJVVpneHJGLUQ4R184cDVaaWI3bzc5d29hRWtCanY0NUxSNE5CMlZzZ213IiwiVGVuYW50IjoiVDRUVk5ESkZMQUFXVUdMNF9UUk4iLCJJZGVudGl0eTIiOiJhOGQ0MGU4NC01NTc1LTRiNDYtOTU0Mi1jNDBiY2JmNDYxYzIiLCJFbmZvcmNlU2NvcGVzRm9yQ2xpZW50IjoiMCIsImdyYW50X2lkIjoiMDc5MWQ1OGYtOTYwZC00NWU2LWIzNzItYjA1MDE0ZWI2NWUwIiwiSW5mb3JTVFNJc3N1ZWRUeXBlIjoiQVMiLCJjbGllbnRfaWQiOiJUNFRWTkRKRkxBQVdVR0w0X1RSTn5NazJlQ1MxTm9lZF9SdjNGVFJTMFU5YmN2LVRDaFg4Rkt0LTh0SS1rc0FnIiwianRpIjoiYWI1NmQyOGQtZmVjMy00NDNhLWFmYjAtODQyNTEzYWFlNjU1IiwiaWF0IjoxNzYwNTE2MDExLCJuYmYiOjE3NjA1MTYwMTEsImV4cCI6MTc2MDUyMzIxMSwiaXNzIjoiaHR0cHM6Ly9taW5nbGUtc3NvLmV1MS5pbmZvcmNsb3Vkc3VpdGUuY29tOjQ0MyIsImF1ZCI6Imh0dHBzOi8vbWluZ2xlLWlvbmFwaS5ldTEuaW5mb3JjbG91ZHN1aXRlLmNvbSJ9.NPaeIJDhQljji6xNKLp6JDHEoSyWxhhuouLTeOPMIXY7yu8FJ7m7IUCWYb-tHPQiiTgBclvGhE--x7-CAPJUjhfIWy4mahQ84QKtcsdqT3GU_dTTamKLpMAF14oWAg8GH0Xp00epfHLysmno1ogum4xSXR-pxbNnsbq0RHFLQ0ef7xohHchtPx7E3fnFcWf-PPiaojnxPGN91Zf81OYZfd7MfyCJt-T0HvCpQLdYZkcLQ6_KjE7ZY3lg8E0mkdw7PjHXCmZKovabQhL8NA0dfuMyI2L-U0JEXnP1XCydeO-7_WICavw71pPJSRKf2UhfLBn-T9zmpv7GGVCR1gSCxw",
+      "Content-Type": "application/json-patch+json"
+    },
+    "body": {
+      "application": {
+        "instance": "T4TVNDJFLAAWUGL4_TRN",
+        "name": "Default"
+      },
+      "headerDetail": {
+        "headerId": "FA31000",
+        "detailId": "FA31000-6412E0FF13BE8"
+      }
+    }
+  },
+  "statut_reponse": 200,
+  "reponse_recue_brute": {
+    "HeaderId": "FA31000",
+    "DetailId": "FA31000-6412E0FF13BE8",
+    "Message": "",
+    "VariantKey": null,
+    "Result": 0,
+    "InputParameters": {
+      "Application": {
+        "Instance": "T4TVNDJFLAAWUGL4_TRN",
+        "Name": "Default",
+        "User": null
+      },
+      "Part": {
+        "Namespace": "Default",
+        "Name": "VEN"
+      },
+      "Mode": 0,
+      "Profile": "Default",
+      "HeaderDetail": {
+        "HeaderId": "FA31000",
+        "DetailId": "FA31000-6412E0FF13BE8"
+      },
+      "SourceHeaderDetail": {
+        "HeaderId": null,
+        "DetailId": null
+      },
+      "VariantKey": null,
+      "IntegrationParameters": [
+        {
+          "IsJsonObject": false,
+          "Name": "SoldToBusinessPartner",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "C00000001"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "SourceType",
+          "Type": 1,
+          "IsNull": false,
+          "SimpleValue": "2"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "ConfigCommerciale",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "oui"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "ConfigTechnique",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "non"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "SourceApplication",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "Boutique web Faber"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "Brand",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "ZFA"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "CurrencyCode",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "EUR"
+        }
+      ],
+      "RapidOptions": []
+    },
+    "CommitParameters": [
+      {
+        "Name": "CfgDescription",
+        "Type": 0,
+        "IsNull": false,
+        "SimpleValue": "Vénitien Alu Tendance 16 mm L400 x H400 mm",
+        "ValueElements": null
+      },
+      {
+        "Name": "ConfiguredPrice",
+        "Type": 1,
+        "IsNull": false,
+        "SimpleValue": "153",
+        "ValueElements": null
+      },
+      {
+        "Name": "FRAIS_TAXE_PMCB",
+        "Type": 0,
+        "IsNull": false,
+        "SimpleValue": "{060900500;Eco-participation PMCB (060900500)}\n",
+        "ValueElements": null
+      },
+      {
+        "Name": "RMS_NV1",
+        "Type": 0,
+        "IsNull": false,
+        "SimpleValue": "XSI",
+        "ValueElements": null
+      },
+      {
+        "Name": "RMS_NV2",
+        "Type": 0,
+        "IsNull": false,
+        "SimpleValue": "XSV",
+        "ValueElements": null
+      },
+      {
+        "Name": "RMS_NV3",
+        "Type": 0,
+        "IsNull": false,
+        "SimpleValue": "XVAL",
+        "ValueElements": null
+      },
+      {
+        "Name": "ImageLink",
+        "Type": 0,
+        "IsNull": false,
+        "SimpleValue": "https://dessinspreprod1.franciaflex.com/medias/TRN_VEN_FA31000_FA31000-6412E0FF13BE8.jpg?dummy=4405da1d-b9eb-4032-97d8-7b11baad90c6",
+        "ValueElements": null
+      }
+    ],
+    "SummaryDetails": [
+      {
+        "PrintSequence": 0,
+        "PrintCode": "",
+        "Description": "Description produit",
+        "Value": "Vénitien Alu Tendance 16 mm L400 x H400 mm"
+      },
+      {
+        "PrintSequence": 1,
+        "PrintCode": "",
+        "Description": " ",
+        "Value": " "
+      },
+      {
+        "PrintSequence": 2,
+        "PrintCode": "",
+        "Description": "Détail de la configuration",
+        "Value": "━━━━━━━━━━━━━━━━━━"
+      },
+      {
+        "PrintSequence": 3,
+        "PrintCode": "",
+        "Description": " ",
+        "Value": " "
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   Dimensions",
+        "Value": "Largeur et Hauteur : L400 x H400 mm"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": " ",
+        "Value": " "
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   Tablier",
+        "Value": "Lame : Alu 16 mm"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Coloris des lames : 0150 BLANC MAT"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Groupe Tarif : U"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": " ",
+        "Value": " "
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   Manoeuvre",
+        "Value": "Manœuvre : Cordon Tige"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Coté de la manœuvre : Gauche"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Disposition : 11 : Sortie à 45°"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Respect de la norme antistrangulation : Avec"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Allège : 2000 mm"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Longueur de la manœuvre : 900mm"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": " ",
+        "Value": " "
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   Pose",
+        "Value": "Caisson : 25 : 25 x 25 mm"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Coloris du caisson : 0150 BLANC MAT"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Coloris de la sous-latte : 0150 BLANC MAT"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Nombre de lames : 28"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Type de pose : Baie"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Débord/Retrait de caisson : Sans"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Nombre de support(s) : 0"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Guidage : Sans guidage"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": " ",
+        "Value": " "
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   Option",
+        "Value": "Commandes séparées : Non"
+      },
+      {
+        "PrintSequence": 20,
+        "PrintCode": "",
+        "Description": "   ",
+        "Value": "Cordon relié à la lame finale : Non"
+      }
+    ],
+    "PricingDetails": [
+      {
+        "PrintSequence": 10,
+        "DetailSequence": 85,
+        "PrintCode": "",
+        "Description": "Prix de base",
+        "Type": 1,
+        "DataType": 1,
+        "SimpleValue": "153"
+      }
+    ],
+    "OrderDetails": [
+      {
+        "PrintSequence": 10,
+        "DetailSequence": 1,
+        "PrintCode": "",
+        "Description": "[size=1.2em][b]Détail des prix :[/b][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1000,
+        "DetailSequence": 2,
+        "PrintCode": "",
+        "Description": "",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1000,
+        "DetailSequence": 3,
+        "PrintCode": "",
+        "Description": "[size=1.3em][b]DétailConfiguration╞═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1000,
+        "DetailSequence": 4,
+        "PrintCode": "",
+        "Description": "",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1100,
+        "DetailSequence": 6,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Globales :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1101,
+        "DetailSequence": 7,
+        "PrintCode": "=!IsNullOrBlank(c_glb_base)",
+        "Description": "Base :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "TRN"
+      },
+      {
+        "PrintSequence": 1102,
+        "DetailSequence": 8,
+        "PrintCode": "=!IsNullOrBlank(c_glb_utilisateur)",
+        "Description": "Type d'utilisateur :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Default"
+      },
+      {
+        "PrintSequence": 1108,
+        "DetailSequence": 14,
+        "PrintCode": "=!IsNullOrBlank(c_glb_numero_variante)",
+        "Description": "N° Variante : ",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "FA31000"
+      },
+      {
+        "PrintSequence": 1109,
+        "DetailSequence": 15,
+        "PrintCode": "=!IsNullOrBlank(c_glb_source_application)",
+        "Description": "Source de l'application :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Boutique web Faber"
+      },
+      {
+        "PrintSequence": 1110,
+        "DetailSequence": 16,
+        "PrintCode": "=!IsNullOrBlank(c_glb_type_saisie)",
+        "Description": "Type de saisie :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Devis"
+      },
+      {
+        "PrintSequence": 1111,
+        "DetailSequence": 63,
+        "PrintCode": "=!IsNullOrBlank(c_glb_type_devis_commande)",
+        "Description": "Type de devis/commande :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Diffus"
+      },
+      {
+        "PrintSequence": 1112,
+        "DetailSequence": 18,
+        "PrintCode": "=!IsNull(c_glb_emballage_chantier)",
+        "Description": "Emballage chantier ?",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Non"
+      },
+      {
+        "PrintSequence": 1113,
+        "DetailSequence": 62,
+        "PrintCode": "=!IsNull(c_glb_date_application)",
+        "Description": "Date d'application :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "15/10/2025 10:12:33"
+      },
+      {
+        "PrintSequence": 1114,
+        "DetailSequence": 20,
+        "PrintCode": "=!IsNull(c_glb_config_commerciale)",
+        "Description": "Configuration commerciale ?",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Oui"
+      },
+      {
+        "PrintSequence": 1115,
+        "DetailSequence": 21,
+        "PrintCode": "=!IsNull(c_glb_config_technique)",
+        "Description": "Configuration technique ?",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Non"
+      },
+      {
+        "PrintSequence": 1116,
+        "DetailSequence": 22,
+        "PrintCode": "=!IsNull(c_glb_config_job_background)",
+        "Description": "Configuration job background ?",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Non"
+      },
+      {
+        "PrintSequence": 1117,
+        "DetailSequence": 23,
+        "PrintCode": "=!IsNull(c_glb_generation_structure)",
+        "Description": "Structure projet générée ?",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Non"
+      },
+      {
+        "PrintSequence": 1120,
+        "DetailSequence": 60,
+        "PrintCode": "=!IsNullOrBlank(c_glb_configurateur)",
+        "Description": "Configurateur :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Store Vénitien"
+      },
+      {
+        "PrintSequence": 1121,
+        "DetailSequence": 64,
+        "PrintCode": "=!IsNullOrBlank(c_glb_marque)",
+        "Description": "Marque calculée :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Franciaflex"
+      },
+      {
+        "PrintSequence": 1122,
+        "DetailSequence": 65,
+        "PrintCode": "=!IsNullOrBlank(c_glb_marquage)",
+        "Description": "Marquage :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Franciaflex"
+      },
+      {
+        "PrintSequence": 1123,
+        "DetailSequence": 66,
+        "PrintCode": "=!IsNull(c_glb_livraison_express)",
+        "Description": "Livraison Express :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Non"
+      },
+      {
+        "PrintSequence": 1200,
+        "DetailSequence": 30,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1200,
+        "DetailSequence": 31,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Remises :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1201,
+        "DetailSequence": 98,
+        "PrintCode": "=!IsNullOrBlank(c_glb_remise_n1)",
+        "Description": "Remise niveau 1 :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "XSI"
+      },
+      {
+        "PrintSequence": 1202,
+        "DetailSequence": 99,
+        "PrintCode": "=!IsNullOrBlank(c_glb_remise_n2)",
+        "Description": "Remise niveau 2 :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "XSV"
+      },
+      {
+        "PrintSequence": 1203,
+        "DetailSequence": 100,
+        "PrintCode": "=!IsNullOrBlank(c_glb_remise_n3)",
+        "Description": "Remise niveau 3 :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "XVAL"
+      },
+      {
+        "PrintSequence": 1300,
+        "DetailSequence": 36,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1300,
+        "DetailSequence": 37,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Eco-participation :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1301,
+        "DetailSequence": 102,
+        "PrintCode": "=!IsNull(c_glb_eco_participation)",
+        "Description": "Liste des éco-participations :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "{10 : {CodeProduit : \"060900500\", Description : \"Eco-participation PMCB (060900500)\", EcoTaxe : \"PMCB\"}}"
+      },
+      {
+        "PrintSequence": 1400,
+        "DetailSequence": 39,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1400,
+        "DetailSequence": 40,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Délais :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1500,
+        "DetailSequence": 48,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1500,
+        "DetailSequence": 49,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Client :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1501,
+        "DetailSequence": 50,
+        "PrintCode": "=!IsNull(v_bool_isInfosClientWebService)",
+        "Description": "Récupération des infos via Web Service ?",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Oui"
+      },
+      {
+        "PrintSequence": 1502,
+        "DetailSequence": 51,
+        "PrintCode": "=!IsNullOrBlank(c_glb_code_client)",
+        "Description": "Code client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "C00000001"
+      },
+      {
+        "PrintSequence": 1503,
+        "DetailSequence": 52,
+        "PrintCode": "=!IsNullOrBlank(c_glb_nom_client)",
+        "Description": "Nom client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "BAIE DEMO TEST"
+      },
+      {
+        "PrintSequence": 1504,
+        "DetailSequence": 53,
+        "PrintCode": "=!IsNullOrBlank(c_glb_famille_client)",
+        "Description": "Famille client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "CAF910    "
+      },
+      {
+        "PrintSequence": 1505,
+        "DetailSequence": 54,
+        "PrintCode": "=!IsNullOrBlank(c_glb_sous_famille_client)",
+        "Description": "Sous-famille client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1506,
+        "DetailSequence": 55,
+        "PrintCode": "=!IsNullOrBlank(c_glb_societe_client)",
+        "Description": "Société client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "VFX000"
+      },
+      {
+        "PrintSequence": 1507,
+        "DetailSequence": 56,
+        "PrintCode": "=!IsNullOrBlank(c_glb_typologie_client)",
+        "Description": "Typologie client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "C04"
+      },
+      {
+        "PrintSequence": 1508,
+        "DetailSequence": 57,
+        "PrintCode": "=!IsNullOrBlank(c_glb_region_client)",
+        "Description": "Région commerciale client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "FX-RSO"
+      },
+      {
+        "PrintSequence": 1509,
+        "DetailSequence": 58,
+        "PrintCode": "=!IsNullOrBlank(c_glb_departement_client)",
+        "Description": "Département client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "14 "
+      },
+      {
+        "PrintSequence": 1510,
+        "DetailSequence": 59,
+        "PrintCode": "=!IsNullOrBlank(c_glb_marque_client)",
+        "Description": "Marque fiche client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "XFX"
+      },
+      {
+        "PrintSequence": 1600,
+        "DetailSequence": 67,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1600,
+        "DetailSequence": 68,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Produit :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1700,
+        "DetailSequence": 72,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1700,
+        "DetailSequence": 73,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Dimensions :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1800,
+        "DetailSequence": 78,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1800,
+        "DetailSequence": 79,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Tablier :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1900,
+        "DetailSequence": 88,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1900,
+        "DetailSequence": 89,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Manoeuvre :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 2000,
+        "DetailSequence": 94,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 2000,
+        "DetailSequence": 95,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Pose & Installation :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 2100,
+        "DetailSequence": 96,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 2100,
+        "DetailSequence": 97,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Option :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      }
+    ],
+    "ProofingDetails": [],
+    "Content": []
+  }
+}

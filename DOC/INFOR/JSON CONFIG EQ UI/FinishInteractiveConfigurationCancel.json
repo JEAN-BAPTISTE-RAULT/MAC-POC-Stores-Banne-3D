@@ -1,0 +1,108 @@
+{
+  "requete_envoyee": {
+    "method": "POST",
+    "url": "https://mingle-ionapi.eu1.inforcloudsuite.com/T4TVNDJFLAAWUGL4_TRN/CPQ/api/v4/ProductConfigurator/FinishInteractiveConfiguration",
+    "headers": {
+      "Authorization": "Bearer eyJraWQiOiJrZzo2N2U1ZDM0ZS02MTkzLTQwYjEtYTJkZS1kNzNlYjhlY2VkYTkiLCJhbGciOiJSUzI1NiJ9.eyJTZXJ2aWNlQWNjb3VudCI6IlQ0VFZOREpGTEFBV1VHTDRfVFJOI0REWVNoS3Bra2R2cGJ2UEZmVU9uYjEyWEh2Y0MzNXpNa3dmX1g3dGYzeVdJVVpneHJGLUQ4R184cDVaaWI3bzc5d29hRWtCanY0NUxSNE5CMlZzZ213IiwiVGVuYW50IjoiVDRUVk5ESkZMQUFXVUdMNF9UUk4iLCJJZGVudGl0eTIiOiJhOGQ0MGU4NC01NTc1LTRiNDYtOTU0Mi1jNDBiY2JmNDYxYzIiLCJFbmZvcmNlU2NvcGVzRm9yQ2xpZW50IjoiMCIsImdyYW50X2lkIjoiMmZlNTlhODUtOGY1ZS00MWY0LTkzZWMtZGI2NTVlNjlkMzgyIiwiSW5mb3JTVFNJc3N1ZWRUeXBlIjoiQVMiLCJjbGllbnRfaWQiOiJUNFRWTkRKRkxBQVdVR0w0X1RSTn5NazJlQ1MxTm9lZF9SdjNGVFJTMFU5YmN2LVRDaFg4Rkt0LTh0SS1rc0FnIiwianRpIjoiYTU3ZWM4N2QtNmQ4My00ZDllLWJlNDYtYmQ2ODQyODcwMzIzIiwiaWF0IjoxNzYwNTE2MDk4LCJuYmYiOjE3NjA1MTYwOTgsImV4cCI6MTc2MDUyMzI5OCwiaXNzIjoiaHR0cHM6Ly9taW5nbGUtc3NvLmV1MS5pbmZvcmNsb3Vkc3VpdGUuY29tOjQ0MyIsImF1ZCI6Imh0dHBzOi8vbWluZ2xlLWlvbmFwaS5ldTEuaW5mb3JjbG91ZHN1aXRlLmNvbSJ9.mgk5qVTsSMpHPjyoT7lI4SYVJ9ZmNCr1l1fQ27CPKdIai5y27bbVvf-4V9ZJe_LEZMHRfvc9ouTxw4NhP_xhoFW5s35C3wTu22yO9jdS-K3hQjW0hPzwhgpl5Xr7Bp3OZXaS22usXAo5Z4m-whk_vN9IHJQhKuEDQoS4oZsSZA7TBhM38WopgSB8TCog536H6EzlsAlrUSwgKoZd_d-yzkyugjhL1lTrcI2HX54EeMzzsfD5GpKJgaRjnhv3SNSeO8fQQwPi0rv8gFfw0R1i9Uy2HYnu0uvCayF5bARLlIqhAI1QDwkbIiucDlrfpc2eMMhXjR53uusQGDEn_wtl7A",
+      "Content-Type": "application/json-patch+json"
+    },
+    "body": {
+      "application": {
+        "instance": "T4TVNDJFLAAWUGL4_TRN",
+        "name": "Default"
+      },
+      "headerDetail": {
+        "headerId": "FA31000",
+        "detailId": "FA31000-6412E1721C87F"
+      }
+    }
+  },
+  "statut_reponse": 200,
+  "reponse_recue_brute": {
+    "HeaderId": "FA31000",
+    "DetailId": "FA31000-6412E1721C87F",
+    "Message": "",
+    "VariantKey": null,
+    "Result": 4,
+    "InputParameters": {
+      "Application": {
+        "Instance": "T4TVNDJFLAAWUGL4_TRN",
+        "Name": "Default",
+        "User": null
+      },
+      "Part": {
+        "Namespace": "Default",
+        "Name": "VEN"
+      },
+      "Mode": 0,
+      "Profile": "Default",
+      "HeaderDetail": {
+        "HeaderId": "FA31000",
+        "DetailId": "FA31000-6412E1721C87F"
+      },
+      "SourceHeaderDetail": {
+        "HeaderId": null,
+        "DetailId": null
+      },
+      "VariantKey": null,
+      "IntegrationParameters": [
+        {
+          "IsJsonObject": false,
+          "Name": "SoldToBusinessPartner",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "C00000001"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "SourceType",
+          "Type": 1,
+          "IsNull": false,
+          "SimpleValue": "2"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "ConfigCommerciale",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "oui"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "ConfigTechnique",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "non"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "SourceApplication",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "Boutique web Faber"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "Brand",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "ZFA"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "CurrencyCode",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "EUR"
+        }
+      ],
+      "RapidOptions": []
+    },
+    "CommitParameters": [],
+    "SummaryDetails": [],
+    "PricingDetails": [],
+    "OrderDetails": [],
+    "ProofingDetails": [],
+    "Content": []
+  }
+}

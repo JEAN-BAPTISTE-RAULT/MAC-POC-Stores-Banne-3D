@@ -1,0 +1,538 @@
+{
+  "requete_envoyee": {
+    "method": "POST",
+    "url": "https://mingle-ionapi.eu1.inforcloudsuite.com/T4TVNDJFLAAWUGL4_TRN/CPQ/api/v4/ProductConfigurator/FinishInteractiveConfiguration",
+    "headers": {
+      "Authorization": "Bearer eyJraWQiOiJrZzo2N2U1ZDM0ZS02MTkzLTQwYjEtYTJkZS1kNzNlYjhlY2VkYTkiLCJhbGciOiJSUzI1NiJ9.eyJTZXJ2aWNlQWNjb3VudCI6IlQ0VFZOREpGTEFBV1VHTDRfVFJOI0REWVNoS3Bra2R2cGJ2UEZmVU9uYjEyWEh2Y0MzNXpNa3dmX1g3dGYzeVdJVVpneHJGLUQ4R184cDVaaWI3bzc5d29hRWtCanY0NUxSNE5CMlZzZ213IiwiVGVuYW50IjoiVDRUVk5ESkZMQUFXVUdMNF9UUk4iLCJJZGVudGl0eTIiOiJhOGQ0MGU4NC01NTc1LTRiNDYtOTU0Mi1jNDBiY2JmNDYxYzIiLCJFbmZvcmNlU2NvcGVzRm9yQ2xpZW50IjoiMCIsImdyYW50X2lkIjoiMDYxZTIzNGMtYWFmNy00OWE3LTkxMWItNTJlMTcwNDNhZDhiIiwiSW5mb3JTVFNJc3N1ZWRUeXBlIjoiQVMiLCJjbGllbnRfaWQiOiJUNFRWTkRKRkxBQVdVR0w0X1RSTn5NazJlQ1MxTm9lZF9SdjNGVFJTMFU5YmN2LVRDaFg4Rkt0LTh0SS1rc0FnIiwianRpIjoiNTk5ODdlOTItMDA0My00NjRiLWIxMjMtNTE5ZjQwODVhN2VlIiwiaWF0IjoxNzYwNTE1NTQ4LCJuYmYiOjE3NjA1MTU1NDgsImV4cCI6MTc2MDUyMjc0OCwiaXNzIjoiaHR0cHM6Ly9taW5nbGUtc3NvLmV1MS5pbmZvcmNsb3Vkc3VpdGUuY29tOjQ0MyIsImF1ZCI6Imh0dHBzOi8vbWluZ2xlLWlvbmFwaS5ldTEuaW5mb3JjbG91ZHN1aXRlLmNvbSJ9.PwggY8oolOCl9duEnOJnNeAtMGtFFcFuyAwcbmmxng_gakADsZp-9cw658kCLEAqjhwnUv0d6Edfzy6dtr9r000kuSiIPBLC_-pYb9TRM7WsY-UOjrdMo_hI1NCjSfI81dOgcv3EadqBJodvKqIvTscaGda9Dj-HGr9QPLpaQUu6EmQcj9KsSbNWcJoPdwvj50omLAmCqKKkD6hLM_MdYHQpwDsSvoVYqJiVgzMcCCJ4lotL9DoCBdVLGP6P_4yExUzjncZAnYLXOtPPTkkgSL3YfmZV1QzTp-cUqEQV2iaa2k9wLwKxAju6QnYvBRrbtDaN6YYUiMghGKFVqJtjgQ",
+      "Content-Type": "application/json-patch+json"
+    },
+    "body": {
+      "application": {
+        "instance": "T4TVNDJFLAAWUGL4_TRN",
+        "name": "Default"
+      },
+      "headerDetail": {
+        "headerId": "FA31000",
+        "detailId": "FA31000-6412DF6463830"
+      }
+    }
+  },
+  "statut_reponse": 200,
+  "reponse_recue_brute": {
+    "HeaderId": "FA31000",
+    "DetailId": "FA31000-6412DF6463830",
+    "Message": "",
+    "VariantKey": null,
+    "Result": 3,
+    "InputParameters": {
+      "Application": {
+        "Instance": "T4TVNDJFLAAWUGL4_TRN",
+        "Name": "Default",
+        "User": null
+      },
+      "Part": {
+        "Namespace": "Default",
+        "Name": "VEN"
+      },
+      "Mode": 0,
+      "Profile": "Default",
+      "HeaderDetail": {
+        "HeaderId": "FA31000",
+        "DetailId": "FA31000-6412DF6463830"
+      },
+      "SourceHeaderDetail": {
+        "HeaderId": null,
+        "DetailId": null
+      },
+      "VariantKey": null,
+      "IntegrationParameters": [
+        {
+          "IsJsonObject": false,
+          "Name": "SoldToBusinessPartner",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "C00000001"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "SourceType",
+          "Type": 1,
+          "IsNull": false,
+          "SimpleValue": "2"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "ConfigCommerciale",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "oui"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "ConfigTechnique",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "non"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "SourceApplication",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "Boutique web Faber"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "Brand",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "ZFA"
+        },
+        {
+          "IsJsonObject": false,
+          "Name": "CurrencyCode",
+          "Type": 0,
+          "IsNull": false,
+          "SimpleValue": "EUR"
+        }
+      ],
+      "RapidOptions": []
+    },
+    "CommitParameters": [
+      {
+        "Name": "ConfiguredPrice",
+        "Type": 1,
+        "IsNull": false,
+        "SimpleValue": "0",
+        "ValueElements": null
+      },
+      {
+        "Name": "ImageLink",
+        "Type": 0,
+        "IsNull": false,
+        "SimpleValue": "https://dessinspreprod1.franciaflex.com/medias/TRN_VEN_FA31000_FA31000-6412DF6463830.svg?dummy=6f6836ad-32cf-44eb-90dc-c477effb3b32",
+        "ValueElements": null
+      }
+    ],
+    "SummaryDetails": [],
+    "PricingDetails": [],
+    "OrderDetails": [
+      {
+        "PrintSequence": 10,
+        "DetailSequence": 1,
+        "PrintCode": "",
+        "Description": "[size=1.2em][b]Détail des prix :[/b][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1000,
+        "DetailSequence": 2,
+        "PrintCode": "",
+        "Description": "",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1000,
+        "DetailSequence": 3,
+        "PrintCode": "",
+        "Description": "[size=1.3em][b]DétailConfiguration╞═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1000,
+        "DetailSequence": 4,
+        "PrintCode": "",
+        "Description": "",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1100,
+        "DetailSequence": 6,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Globales :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1101,
+        "DetailSequence": 7,
+        "PrintCode": "=!IsNullOrBlank(c_glb_base)",
+        "Description": "Base :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "TRN"
+      },
+      {
+        "PrintSequence": 1102,
+        "DetailSequence": 8,
+        "PrintCode": "=!IsNullOrBlank(c_glb_utilisateur)",
+        "Description": "Type d'utilisateur :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Default"
+      },
+      {
+        "PrintSequence": 1108,
+        "DetailSequence": 14,
+        "PrintCode": "=!IsNullOrBlank(c_glb_numero_variante)",
+        "Description": "N° Variante : ",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "FA31000"
+      },
+      {
+        "PrintSequence": 1109,
+        "DetailSequence": 15,
+        "PrintCode": "=!IsNullOrBlank(c_glb_source_application)",
+        "Description": "Source de l'application :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Boutique web Faber"
+      },
+      {
+        "PrintSequence": 1110,
+        "DetailSequence": 16,
+        "PrintCode": "=!IsNullOrBlank(c_glb_type_saisie)",
+        "Description": "Type de saisie :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Devis"
+      },
+      {
+        "PrintSequence": 1111,
+        "DetailSequence": 63,
+        "PrintCode": "=!IsNullOrBlank(c_glb_type_devis_commande)",
+        "Description": "Type de devis/commande :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Diffus"
+      },
+      {
+        "PrintSequence": 1112,
+        "DetailSequence": 18,
+        "PrintCode": "=!IsNull(c_glb_emballage_chantier)",
+        "Description": "Emballage chantier ?",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Non"
+      },
+      {
+        "PrintSequence": 1113,
+        "DetailSequence": 62,
+        "PrintCode": "=!IsNull(c_glb_date_application)",
+        "Description": "Date d'application :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "15/10/2025 10:05:22"
+      },
+      {
+        "PrintSequence": 1114,
+        "DetailSequence": 20,
+        "PrintCode": "=!IsNull(c_glb_config_commerciale)",
+        "Description": "Configuration commerciale ?",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Oui"
+      },
+      {
+        "PrintSequence": 1115,
+        "DetailSequence": 21,
+        "PrintCode": "=!IsNull(c_glb_config_technique)",
+        "Description": "Configuration technique ?",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Non"
+      },
+      {
+        "PrintSequence": 1116,
+        "DetailSequence": 22,
+        "PrintCode": "=!IsNull(c_glb_config_job_background)",
+        "Description": "Configuration job background ?",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Non"
+      },
+      {
+        "PrintSequence": 1117,
+        "DetailSequence": 23,
+        "PrintCode": "=!IsNull(c_glb_generation_structure)",
+        "Description": "Structure projet générée ?",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Non"
+      },
+      {
+        "PrintSequence": 1120,
+        "DetailSequence": 60,
+        "PrintCode": "=!IsNullOrBlank(c_glb_configurateur)",
+        "Description": "Configurateur :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Store Vénitien"
+      },
+      {
+        "PrintSequence": 1121,
+        "DetailSequence": 64,
+        "PrintCode": "=!IsNullOrBlank(c_glb_marque)",
+        "Description": "Marque calculée :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Franciaflex"
+      },
+      {
+        "PrintSequence": 1122,
+        "DetailSequence": 65,
+        "PrintCode": "=!IsNullOrBlank(c_glb_marquage)",
+        "Description": "Marquage :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Franciaflex"
+      },
+      {
+        "PrintSequence": 1123,
+        "DetailSequence": 66,
+        "PrintCode": "=!IsNull(c_glb_livraison_express)",
+        "Description": "Livraison Express :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Non"
+      },
+      {
+        "PrintSequence": 1200,
+        "DetailSequence": 30,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1200,
+        "DetailSequence": 31,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Remises :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1300,
+        "DetailSequence": 36,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1300,
+        "DetailSequence": 37,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Eco-participation :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1301,
+        "DetailSequence": 38,
+        "PrintCode": "=!IsNull(c_glb_eco_participation)",
+        "Description": "Liste des éco-participations :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "{}"
+      },
+      {
+        "PrintSequence": 1400,
+        "DetailSequence": 39,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1400,
+        "DetailSequence": 40,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Délais :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1500,
+        "DetailSequence": 48,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1500,
+        "DetailSequence": 49,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Client :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1501,
+        "DetailSequence": 50,
+        "PrintCode": "=!IsNull(v_bool_isInfosClientWebService)",
+        "Description": "Récupération des infos via Web Service ?",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "Oui"
+      },
+      {
+        "PrintSequence": 1502,
+        "DetailSequence": 51,
+        "PrintCode": "=!IsNullOrBlank(c_glb_code_client)",
+        "Description": "Code client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "C00000001"
+      },
+      {
+        "PrintSequence": 1503,
+        "DetailSequence": 52,
+        "PrintCode": "=!IsNullOrBlank(c_glb_nom_client)",
+        "Description": "Nom client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "BAIE DEMO TEST"
+      },
+      {
+        "PrintSequence": 1504,
+        "DetailSequence": 53,
+        "PrintCode": "=!IsNullOrBlank(c_glb_famille_client)",
+        "Description": "Famille client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "CAF910    "
+      },
+      {
+        "PrintSequence": 1505,
+        "DetailSequence": 54,
+        "PrintCode": "=!IsNullOrBlank(c_glb_sous_famille_client)",
+        "Description": "Sous-famille client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1506,
+        "DetailSequence": 55,
+        "PrintCode": "=!IsNullOrBlank(c_glb_societe_client)",
+        "Description": "Société client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "VFX000"
+      },
+      {
+        "PrintSequence": 1507,
+        "DetailSequence": 56,
+        "PrintCode": "=!IsNullOrBlank(c_glb_typologie_client)",
+        "Description": "Typologie client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "C04"
+      },
+      {
+        "PrintSequence": 1508,
+        "DetailSequence": 57,
+        "PrintCode": "=!IsNullOrBlank(c_glb_region_client)",
+        "Description": "Région commerciale client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "FX-RSO"
+      },
+      {
+        "PrintSequence": 1509,
+        "DetailSequence": 58,
+        "PrintCode": "=!IsNullOrBlank(c_glb_departement_client)",
+        "Description": "Département client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "14 "
+      },
+      {
+        "PrintSequence": 1510,
+        "DetailSequence": 59,
+        "PrintCode": "=!IsNullOrBlank(c_glb_marque_client)",
+        "Description": "Marque fiche client :",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": "XFX"
+      },
+      {
+        "PrintSequence": 1600,
+        "DetailSequence": 67,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1600,
+        "DetailSequence": 68,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Produit :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1700,
+        "DetailSequence": 72,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1700,
+        "DetailSequence": 73,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Dimensions :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1800,
+        "DetailSequence": 78,
+        "PrintCode": "",
+        "Description": "[size=1.2em][color=dimgray][b]════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════[/b][/color][/size]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      },
+      {
+        "PrintSequence": 1800,
+        "DetailSequence": 79,
+        "PrintCode": "",
+        "Description": "[color=dimgray][size=1.2em][i][b]Informations Tablier :[/b][/i][/size][/color]",
+        "Type": 2,
+        "DataType": 0,
+        "SimpleValue": ""
+      }
+    ],
+    "ProofingDetails": [],
+    "Content": []
+  }
+}
