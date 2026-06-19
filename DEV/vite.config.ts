@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
   console.log(command, mode, isSsrBuild);
   
   return {
-    base: mode == 'production' ? "/mac/" : "",
+    base: mode == 'production' ? "/mac/" : "/",
     server: {
       port: 340,
       open: true,

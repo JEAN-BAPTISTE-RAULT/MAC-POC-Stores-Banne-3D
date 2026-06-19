@@ -47,7 +47,7 @@ class App {
     this.controls = new OrbitControls( this.camera, this.renderer.domElement );
     this.controls.enableDamping = true;
     this.controls.minDistance = .01;
-    this.controls.maxDistance = 15;
+    this.controls.maxDistance = 1000;
     this.controls.target.set( 3, 0, 1 );
     this.controls.update();
 
@@ -100,18 +100,26 @@ class App {
 
   private initLight() {
 
-    const SHADOW_MAP_WIDTH = 2048, SHADOW_MAP_HEIGHT = 1024;
+    const SHADOW_MAP_WIDTH = 2048, SHADOW_MAP_HEIGHT = 2048;
 
     // Lumières
     const ambientLight = new THREE.AmbientLight(0xffffff, .5);
     this.scene.add(ambientLight);
 
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
-    directionalLight.position.set(5, 15, 5);
-    directionalLight.castShadow = true;
-    directionalLight.shadow.mapSize.width = SHADOW_MAP_WIDTH;
-		directionalLight.shadow.mapSize.height = SHADOW_MAP_HEIGHT;
-    this.scene.add(directionalLight);
+    const spotLight = new THREE.SpotLight(0xffffff, 200);
+    spotLight.position.set(5, 15, 5);
+    spotLight.angle = Math.PI / 5;  // 36° — couvre toute la scène depuis y=15
+    spotLight.penumbra = 0.3;       // bords doux
+    spotLight.decay = 2;
+    spotLight.castShadow = true;
+    spotLight.shadow.mapSize.width = SHADOW_MAP_WIDTH;
+		spotLight.shadow.mapSize.height = SHADOW_MAP_HEIGHT;
+    spotLight.shadow.camera.near = 1;
+    spotLight.shadow.camera.far = 40;
+    this.scene.add(spotLight);
+    // La target doit être dans la scène pour fonctionner
+    spotLight.target.position.set(2, 0, 0);
+    this.scene.add(spotLight.target);
   }
 
   private initGlobalHelper(){
@@ -230,7 +238,7 @@ class App {
 
   private initPlane(node:any): THREE.Mesh {
 
-    let _geometry:THREE.PlaneGeometry = new THREE.PlaneGeometry();
+    let _geometry:THREE.PlaneGeometry = new THREE.PlaneGeometry(1,1,10,10);
     _geometry.applyMatrix4(new THREE.Matrix4().makeRotationX(-Math.PI / 2));
     // Déplace le pivot au coin back-left
     // Back = -Z (en Three.js, Z négatif = "devant", donc +Z = "derrière")
@@ -247,7 +255,7 @@ class App {
 
   private initBox(node:any): THREE.Mesh {
 
-    let _geometry:THREE.BoxGeometry = new THREE.BoxGeometry();
+    let _geometry:THREE.BoxGeometry = new THREE.BoxGeometry(1,1,1,10,10,10);
     _geometry.translate(.5, .5,.5);
     _geometry.computeBoundingBox();
 
@@ -336,10 +344,8 @@ class App {
     }
 
     if(_object){
-      // _object.castShadow = jsonNode.castShadow;
-      // _object.receiveShadow = jsonNode.receiveShadow;
-      _object.castShadow = true;
-      _object.receiveShadow = true;
+      _object.castShadow = jsonNode.castShadow !== false;
+      _object.receiveShadow = jsonNode.receiveShadow !== false;
 
       _object.name = jsonNode.id;
       console.log(_object.name, _object);

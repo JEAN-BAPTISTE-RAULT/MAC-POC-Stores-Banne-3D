@@ -22,7 +22,7 @@ export class TextureAtlas {
 
     this._ready = false;
 
-    const _texture_path = '/textures/';
+    const _texture_path = 'textures/';
 
     // Sky env
     const _skyboxes_path = _texture_path+'skyboxes/';
@@ -33,12 +33,12 @@ export class TextureAtlas {
       const manager = new THREE.LoadingManager();
       this.textureLib = {};
 
-      manager.onStart = (url, itemsLoaded, itemsTotal) => {
-        // console.log( 'Started loading file: ' + url + '.\nLoaded ' + itemsLoaded + ' of ' + itemsTotal + ' files.' );
-      };
-      manager.onProgress = (url, itemsLoaded, itemsTotal) => {
-        // console.log( 'Loading file: ' + url + '.\nLoaded ' + itemsLoaded + ' of ' + itemsTotal + ' files.' );
-      };
+      // manager.onStart = (url, itemsLoaded, itemsTotal) => {
+      //   // console.log( 'Started loading file: ' + url + '.\nLoaded ' + itemsLoaded + ' of ' + itemsTotal + ' files.' );
+      // };
+      // manager.onProgress = (url, itemsLoaded, itemsTotal) => {
+      //   // console.log( 'Loading file: ' + url + '.\nLoaded ' + itemsLoaded + ' of ' + itemsTotal + ' files.' );
+      // };
       
       manager.onLoad = () => {
         this.initMaterial(jsonMaterialList);
@@ -59,25 +59,26 @@ export class TextureAtlas {
         this._skyEnv = cubeTexture3;
       });
 
-      let _textureUrls:string[] = [];
+      let _colorUrls:string[] = [];
+      let _linearUrls:string[] = [];
       jsonMaterialList.map((node:any)=>{
-        if(node.map) _textureUrls.push(node.map);
-        if(node.normalMap) _textureUrls.push(node.normalMap);
-        if(node.roughnessMap) _textureUrls.push(node.roughnessMap);
+        if(node.map) _colorUrls.push(node.map);
+        if(node.normalMap) _linearUrls.push(node.normalMap);
+        if(node.roughnessMap) _linearUrls.push(node.roughnessMap);
       });
 
-      _textureUrls.map((url:any)=>{
+      const loadTexture = (url:string, colorSpace:string) => {
         _textureLoader.load(_texture_path+url, (texture:THREE.Texture)=>{
-            texture.wrapS = THREE.RepeatWrapping;
-            texture.wrapT = THREE.RepeatWrapping;
-            texture.minFilter = THREE.LinearFilter;
-            texture.colorSpace = THREE.SRGBColorSpace;
-            this._textureList.push({
-              url:url,
-              texture:texture
-            });
+          texture.wrapS = THREE.RepeatWrapping;
+          texture.wrapT = THREE.RepeatWrapping;
+          texture.minFilter = THREE.LinearFilter;
+          texture.colorSpace = colorSpace;
+          this._textureList.push({ url, texture });
         });
-      });
+      };
+
+      _colorUrls.map((url:any) => loadTexture(url, THREE.SRGBColorSpace));
+      _linearUrls.map((url:any) => loadTexture(url, THREE.LinearSRGBColorSpace));
      
     });
 

@@ -82,6 +82,7 @@
           "type": "Box",
           "referenceComponent": "MUR_1",
           "material": "MAT_MUR",
+          "castShadow": false,
           "receiveShadow": true,
           "position": {
             "x": -4000,
