@@ -5,6 +5,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
 import { TextureAtlas } from './texture.atlas';
+import { WorldBox3D } from './decors-wall.three.object3d';
+import { UiLayer } from './ui-layer';
 
 const MM_TO_METER:number = 0.001;
 
@@ -14,6 +16,8 @@ class App {
   private renderer: THREE.WebGLRenderer;
   private controls: OrbitControls;
   private gui: any;
+
+  private uiLayer: UiLayer;
 
   // private morphMeshes: THREE.Mesh[] = [];
 
@@ -30,7 +34,7 @@ class App {
 
     // Camera
     this.camera = new THREE.PerspectiveCamera(
-      75,
+      50,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
@@ -49,11 +53,16 @@ class App {
     this.controls.minDistance = .01;
     this.controls.maxDistance = 1000;
     this.controls.target.set( 3, 0, 1 );
+
+
     this.controls.update();
+
 
     this.initLight();
     this.initGlobalHelper();
-    this.loadDefaultAssets();
+    this.loadDefaultAssets().then(()=>{
+      this.buildUiLayer();
+    });
     this.addEventListeners();
     this.animate();
   }
@@ -69,6 +78,8 @@ class App {
     }
 
     this.helpers.splice(0, this.helpers.length);
+
+    this.uiLayer.destroy();
 
     if(this.gui) {
       this.gui.destroy();
@@ -100,7 +111,7 @@ class App {
 
   private initLight() {
 
-    const SHADOW_MAP_WIDTH = 2048, SHADOW_MAP_HEIGHT = 2048;
+    const SHADOW_MAP_WIDTH = 4096, SHADOW_MAP_HEIGHT = 4096;
 
     // Lumières
     const ambientLight = new THREE.AmbientLight(0xffffff, .5);
@@ -149,7 +160,7 @@ class App {
     // console.log(this.loadedJSON);
     await TextureAtlas.init(this.loadedJSON.materials);
     this.buildJsonNode(this.loadedJSON);
-    this.initGUI();
+    this.initGUI(false);
     
   }
 
@@ -171,7 +182,7 @@ class App {
     this.controls.update();
   }
 
-  private initGUI() {
+  private initGUI(withHelpers:boolean) {
     this.gui = new GUI();
     this.gui.add(this.helpers[0], "visible").name("Axes");
     this.gui.add(this.helpers[1], "visible").name("Grille");
@@ -183,7 +194,7 @@ class App {
     let _folders:any = {};
     _folders[this.scene.uuid] = this.gui.addFolder("ROOT");
     this.scene.traverse((object:any)=>{
-      if(object.type == "Group" || object.type == "Mesh"){
+      if(object.type == "Group" || object.type == "Mesh" || object instanceof WorldBox3D){
         _folders[object.uuid] = _folders[object.parent.uuid].addFolder(object.name);
         // _folders[object.uuid].close();
         _folders[object.uuid].add(object, "visible");
@@ -203,21 +214,24 @@ class App {
         _rotationFolder.add(object.rotation, "y",-3.15,3.15,0.001);
         _rotationFolder.add(object.rotation, "z",-3.15,3.15,0.001);
 
-        const helper = new THREE.AxesHelper(0.1);
-        this.scene.add(helper); // helper est au root
-        helper.renderOrder = 999;
-        (helper.material as any).depthTest = false;
-        const worldPos = new THREE.Vector3();
-        const worldQuat = new THREE.Quaternion();
+        if(withHelpers){
 
-        object.getWorldPosition(worldPos);
-        object.getWorldQuaternion(worldQuat);
-        helper.visible = false;
-
-        helper.position.copy(worldPos);
-        helper.quaternion.copy(worldQuat);
-
-        _positionFolder.add(helper, "visible").name("Voir pivot");
+          const helper = new THREE.AxesHelper(0.1);
+          this.scene.add(helper); // helper est au root
+          helper.renderOrder = 999;
+          (helper.material as any).depthTest = false;
+          const worldPos = new THREE.Vector3();
+          const worldQuat = new THREE.Quaternion();
+  
+          object.getWorldPosition(worldPos);
+          object.getWorldQuaternion(worldQuat);
+          helper.visible = false;
+  
+          helper.position.copy(worldPos);
+          helper.quaternion.copy(worldQuat);
+  
+          _positionFolder.add(helper, "visible").name("Voir pivot");
+        }
 
         let focus:any = {
           focus : () => {
@@ -226,6 +240,8 @@ class App {
         }
         _folders[object.uuid].add(focus, "focus").name("Focus");
 
+      } else {
+        // console.log(object);
       }
       if(object.name == "MAT_TOILE_STD"){
         this.focusOrbitOnObject(object);
@@ -233,6 +249,16 @@ class App {
       // console.log(object);
       
     });
+  }
+
+
+  private buildUiLayer() {
+    this.uiLayer = new UiLayer(this.controls);
+    console.log(this.loadedJSON);
+    
+    for (let i = 0; i < this.loadedJSON.cotations.length; i++) {
+      this.uiLayer.addQuote(this.loadedJSON.cotations[i]);
+    }
   }
 
 
@@ -250,6 +276,16 @@ class App {
 
     let _mesh = new THREE.Mesh(_geometry, TextureAtlas.getMaterialByName(node.material));
 
+    return _mesh;
+  }
+
+  private initWorldBox(jsonNode:any): WorldBox3D {
+    let _mesh:WorldBox3D = new WorldBox3D(
+      jsonNode.dimension.width * MM_TO_METER,
+      jsonNode.dimension.height * MM_TO_METER,
+      jsonNode.dimension.depth * MM_TO_METER,
+      TextureAtlas.getMaterialByName(jsonNode.material)
+    );
     return _mesh;
   }
 
@@ -288,9 +324,15 @@ class App {
     if(!type && (jsonNode.elements?.length > 0)) type = "Group";
     if(type == "Mesh" && (jsonNode.elements?.length > 0)) type = "Group";
 
-    let _object:THREE.Group|THREE.Mesh|null|undefined;
+    let _object:THREE.Group|THREE.Mesh|WorldBox3D|null|undefined;
 
     switch (type) {
+
+      case "WorldBox":
+        _object = this.initWorldBox(jsonNode);
+        this.handlePosition(_object, jsonNode);
+        (_object as WorldBox3D).update();
+        break;
 
       case "Box":
         _object = this.initBox(jsonNode);
@@ -348,7 +390,7 @@ class App {
       _object.receiveShadow = jsonNode.receiveShadow !== false;
 
       _object.name = jsonNode.id;
-      console.log(_object.name, _object);
+      // console.log(_object.name, _object);
       
       parent.add(_object);
       
@@ -359,7 +401,7 @@ class App {
     
   }
 
-  private handlePosition(object:THREE.Mesh|THREE.Group|null, jsonNode:any){
+  private handlePosition(object:THREE.Mesh|THREE.Group|WorldBox3D|null, jsonNode:any){
     // console.log(jsonNode);
     if(!object) return;
 
@@ -400,7 +442,7 @@ class App {
         object.scale.z = (jsonNode.dimension.depth * MM_TO_METER)/size!.z;
       }
 
-      if(object.material instanceof THREE.MeshStandardMaterial){
+      if(object.material instanceof THREE.MeshStandardMaterial && !(object instanceof WorldBox3D)){
         if(object.material.userData.texturesWidth){
           let repeatX:number = (object.scale.x*size!.x)/object.material.userData.texturesWidth;
           let repeatY:number = size!.y < 0.001 ? (object.scale.z*size!.z)/object.material.userData.texturesWidth : (object.scale.y*size!.y)/object.material.userData.texturesWidth;
@@ -434,7 +476,8 @@ class App {
       // let _jsonUrl:string = "JSON_Banne_3D_2026-06-04.json";
       // let _jsonUrl:string = "JSON_Banne_3D_2026-06-04-PASSERELLE.json";
       // let _jsonUrl:string = "JSON_Banne_3D_2026-06-12-PASSERELLE.json";
-      let _jsonUrl:string = "JSON_Banne_3D_2026-06-18-PASSERELLE.json";
+      // let _jsonUrl:string = "JSON_Banne_3D_2026-06-18-PASSERELLE.json";
+      let _jsonUrl:string = "JSON_Banne_3D_2026-07-20-PASSERELLE.json";
 
       fetch(_jsonUrl).then((response:any)=>{
         response.json().then((jsonResponse:any)=>{
@@ -473,7 +516,7 @@ class App {
         
         gltf.scene.traverse((node:any) => {
           if (node.isMesh) {
-            console.log(node.name);
+            // console.log(node.name);
             let geometry:THREE.BufferGeometry = node.geometry;
             geometry.name = node.name;
 
@@ -491,7 +534,7 @@ class App {
       
       },
       (xhr) => {
-        console.log((xhr.loaded / xhr.total * 100) + "% loaded");
+        // console.log((xhr.loaded / xhr.total * 100) + "% loaded");
       },
       (error) => {
         console.error("Error loading GLB:", error);
@@ -514,6 +557,7 @@ class App {
         this.initGlobalHelper();
         await this.loadAndParse3dAsset(url);
         await this.buildFromLoadedAssets();
+        this.buildUiLayer();
         URL.revokeObjectURL(url); // libère la mémoire
 
     });
@@ -529,6 +573,7 @@ class App {
         this.initLight();
         this.initGlobalHelper();
         await this.buildFromLoadedAssets();
+        this.buildUiLayer();
 
     });
   }
@@ -537,11 +582,13 @@ class App {
     this.camera.aspect = window.innerWidth / window.innerHeight;
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.uiLayer.setSize(window.innerWidth, window.innerHeight);
   }
 
   private animate = (): void => {
     requestAnimationFrame(this.animate);
     this.controls.update();
+    // this.uiLayer.update();
     this.renderer.render(this.scene, this.camera);
   }
 }

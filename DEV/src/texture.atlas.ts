@@ -121,6 +121,15 @@ export class TextureAtlas {
       if(node.texturesMmWidth){
         _mat.userData.texturesWidth = node.texturesMmWidth*0.001;
       }
+      if(node.texturesRotation){
+        _mat.userData.texturesRotation =  node.texturesRotation* THREE.MathUtils.DEG2RAD;
+      }
+      if(node.texturesMmOffsetX || node.texturesMmOffsetY){
+        _mat.userData.texturesOffset = {
+          x:(node.texturesMmOffsetX ?? 0)*0.001,
+          y:(node.texturesMmOffsetY ?? 0)*0.001
+        }
+      }
 
       this._materialList.push({
         id: node.id,
