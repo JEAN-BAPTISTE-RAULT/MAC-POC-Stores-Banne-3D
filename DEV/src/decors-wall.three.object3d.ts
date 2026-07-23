@@ -1,5 +1,5 @@
 
-import { BoxGeometry, BufferGeometry, Material, Mesh, MeshStandardMaterial, Object3D } from 'three';
+import { BoxGeometry, Mesh, MeshStandardMaterial } from 'three';
 
 export class WorldBox3D extends Mesh {
     

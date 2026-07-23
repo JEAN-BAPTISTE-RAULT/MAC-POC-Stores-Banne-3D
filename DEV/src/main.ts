@@ -60,9 +60,7 @@ class App {
 
     this.initLight();
     this.initGlobalHelper();
-    this.loadDefaultAssets().then(()=>{
-      this.buildUiLayer();
-    });
+    this.loadDefaultAssets();
     this.addEventListeners();
     this.animate();
   }
@@ -153,6 +151,7 @@ class App {
   private async loadDefaultAssets(): Promise<void> {
     await this.loadAndParse3dAsset();
     await this.loadJson();
+    this.buildUiLayer();
     await this.buildFromLoadedAssets();
   }
 
@@ -186,6 +185,7 @@ class App {
     this.gui = new GUI();
     this.gui.add(this.helpers[0], "visible").name("Axes");
     this.gui.add(this.helpers[1], "visible").name("Grille");
+    this.gui.add(this.helpers[2], "visible").name("Cone de cotations");
 
     
     this.gui.add(document.getElementById("jsonFileInput"), "click").name("Import JSON");
@@ -255,14 +255,70 @@ class App {
   private buildUiLayer() {
     this.uiLayer = new UiLayer(this.controls);
     console.log(this.loadedJSON);
+
+    let coneVisibilityGroup = new THREE.Group();
+    coneVisibilityGroup.visible = false;
+    this.scene.add(coneVisibilityGroup);
+    this.helpers.push(coneVisibilityGroup);
+    
     
     for (let i = 0; i < this.loadedJSON.cotations.length; i++) {
       this.uiLayer.addQuote(this.loadedJSON.cotations[i]);
+
+      let coneHelper = this.generateCotationCone(this.loadedJSON.cotations[i]);
+      coneVisibilityGroup.add(coneHelper);
+      
     }
+  }
+
+  private generateCotationCone(node:any):THREE.Mesh{
+    const material = new THREE.MeshBasicMaterial( {
+      color: 0xe0e0ff,
+			wireframe: true
+    } );
+    let _angle = THREE.MathUtils.degToRad(node.visibilityCone ? node.visibilityCone.angle : 90);
+    let _cone = new THREE.Mesh(new THREE.ConeGeometry(Math.tan(_angle*.5)*2,2,8,1,true), material);
+    
+    _cone.geometry.rotateX(Math.PI*-.5);
+    _cone.geometry.translate(0, 0,1);
+
+    let _3dStart = new THREE.Vector3(
+        node.start.x*MM_TO_METER,
+        node.start.y*MM_TO_METER,
+        node.start.z*MM_TO_METER
+    );
+    let _3dEnd = new THREE.Vector3(
+        node.end.x*MM_TO_METER,
+        node.end.y*MM_TO_METER,
+        node.end.z*MM_TO_METER
+    );
+
+    let _3dMiddle = new THREE.Vector3().lerpVectors(_3dStart, _3dEnd, 0.5);
+
+
+    _cone.position.copy(_3dMiddle);
+
+    let _localLookAt = new THREE.Vector3(0,0,1);
+    if(node.visibilityCone){
+
+
+      _localLookAt.set(
+          node.visibilityCone.axis.x,
+          node.visibilityCone.axis.y,
+          node.visibilityCone.axis.z
+      )
+    }
+    _localLookAt.add(_3dMiddle);
+    //console.log(node.visibilityCone, _3dMiddle, _localLookAt);
+      
+    _cone.lookAt(_localLookAt);
+
+    return _cone;
   }
 
 
   private initPlane(node:any): THREE.Mesh {
+
 
     let _geometry:THREE.PlaneGeometry = new THREE.PlaneGeometry(1,1,10,10);
     _geometry.applyMatrix4(new THREE.Matrix4().makeRotationX(-Math.PI / 2));
@@ -533,9 +589,7 @@ class App {
         resolve();
       
       },
-      (xhr) => {
-        // console.log((xhr.loaded / xhr.total * 100) + "% loaded");
-      },
+      undefined,
       (error) => {
         console.error("Error loading GLB:", error);
         reject(error);
@@ -556,8 +610,8 @@ class App {
         this.initLight();
         this.initGlobalHelper();
         await this.loadAndParse3dAsset(url);
-        await this.buildFromLoadedAssets();
         this.buildUiLayer();
+        await this.buildFromLoadedAssets();
         URL.revokeObjectURL(url); // libère la mémoire
 
     });
@@ -572,8 +626,8 @@ class App {
         this.destroy();
         this.initLight();
         this.initGlobalHelper();
-        await this.buildFromLoadedAssets();
         this.buildUiLayer();
+        await this.buildFromLoadedAssets();
 
     });
   }

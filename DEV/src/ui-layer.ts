@@ -21,7 +21,7 @@ export class UiLayer {
         let defs = document.createElementNS("http://www.w3.org/2000/svg", "defs");
         let _defArrow = document.createElementNS("http://www.w3.org/2000/svg", "path");
         _defArrow.id = "arrow";
-        _defArrow.setAttribute("d", "M 1 0 L -15 -5 L -15 5 Z");
+        _defArrow.setAttribute("d", "M 3 0 L -15 -8 L -15 8 Z");
         _defArrow.setAttribute("fill", "currentColor");
         defs.appendChild(_defArrow);
         this._svgDom.id = "ui-layer";
@@ -34,6 +34,11 @@ export class UiLayer {
     getScreenCoord = (point3d:Vector3):Vector3 =>{
         // console.log(point3d);
         return point3d.clone().project(this._threeCameraController.object as Camera).add(this.screenScalarOffset).multiply(this.screenFactorToPx);
+    }
+
+    getAngleFromCamera = (point3d:Vector3):Vector3 =>{
+        // console.log(point3d);
+        return new Vector3().subVectors(this._threeCameraController.object.position, point3d);
     }
 
     onCameraOrbitChange = () =>{

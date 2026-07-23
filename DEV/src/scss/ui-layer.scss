@@ -6,4 +6,21 @@
         pointer-events: none;
         user-select: none;
         z-index:1;
+
+        text {
+                font-family: "Roboto", sans-serif;
+                font-size: 2vh;
+                font-weight: bold;
+                stroke: currentColor;
+                stroke-width: .5em;
+                fill: white;
+                paint-order: stroke;
+                stroke-linejoin: round;
+        }
+
+        .quote {
+                &.hidden {
+                        display:none;
+                }
+        }
 }
